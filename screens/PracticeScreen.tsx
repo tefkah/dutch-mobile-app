@@ -1,19 +1,21 @@
 import * as React from 'react';
-import {Button, StyleSheet} from 'react-native';
-
-import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
+import {StyleSheet} from 'react-native';
+import {Button, Text, Layout, Divider} from '@ui-kitten/components';
+//import EditScreenInfo from '../components/EditScreenInfo';
+import { View } from '../components/Themed';
 
 export default function PracticeScreen() {
   return (
-    <View style={styles.container}>
+    <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text style={styles.title}>Practice</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Text>Select the thing you want to test</Text>
-      <Button title={"Pronounciation"}/>
-      <Button title={"Spelling"}/>
-      <Button title={"???"}/>
-    </View>
+      <Divider/>
+      <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <Button style={{width: 200}} appearance="outline">Pronunciation</Button>
+        <Button style={{width: 200}} appearance="outline">Spelling</Button>
+      </Layout>
+    </Layout>
   );
 }
 
