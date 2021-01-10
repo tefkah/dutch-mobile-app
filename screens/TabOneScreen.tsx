@@ -14,7 +14,7 @@ export default function TabOneScreen() {
   );
 }
 
-//Test
+//Tester
 
 const styles = StyleSheet.create({
   container: {
