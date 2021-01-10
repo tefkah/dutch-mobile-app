@@ -1,13 +1,14 @@
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+import PracticeScreen from '../screens/PracticeScreen';
+import TestScreen from '../screens/TestScreen';
+import LearnScreen from '../screens/LearnScreen';
+import { BottomTabParamList, PracticeParamList, TestParamList, LearnParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -16,22 +17,29 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Practice"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
-        name="TabOne"
-        component={TabOneNavigator}
+        name="Practice"
+        component={PracticeNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="dumbbell" color={color} />,
         }}
       />
       <BottomTab.Screen
-        name="TabTwo"
-        component={TabTwoNavigator}
+        name="Test"
+        component={TestNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="checkbox-multiple-marked-outline" color={color} />,
         }}
       />
+        <BottomTab.Screen
+            name="Learn"
+            component={LearnNavigator}
+            options={{
+                tabBarIcon: ({ color }) => <TabBarIcon name="book-open-page-variant" color={color} />,
+            }}
+        />
     </BottomTab.Navigator>
   );
 }
@@ -39,35 +47,49 @@ export default function BottomTabNavigator() {
 // You can explore the built-in icon families and icons on the web at:
 // https://icons.expo.fyi/
 function TabBarIcon(props: { name: string; color: string }) {
-  return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
+  return <MaterialCommunityIcons size={30} style={{ marginBottom: -3 }} {...props} />;
 }
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
-const TabOneStack = createStackNavigator<TabOneParamList>();
+const PracticeStack = createStackNavigator<PracticeParamList>();
 
-function TabOneNavigator() {
+function PracticeNavigator() {
   return (
-    <TabOneStack.Navigator>
-      <TabOneStack.Screen
-        name="TabOneScreen"
-        component={TabOneScreen}
-        options={{ headerTitle: 'Tab One Title' }}
+    <PracticeStack.Navigator>
+      <PracticeStack.Screen
+        name="PracticeScreen"
+        component={PracticeScreen}
+        options={{ headerTitle: 'Practice' }}
       />
-    </TabOneStack.Navigator>
+    </PracticeStack.Navigator>
   );
 }
 
-const TabTwoStack = createStackNavigator<TabTwoParamList>();
+const TestStack = createStackNavigator<TestParamList>();
 
-function TabTwoNavigator() {
+function TestNavigator() {
   return (
-    <TabTwoStack.Navigator>
-      <TabTwoStack.Screen
-        name="TabTwoScreen"
-        component={TabTwoScreen}
-        options={{ headerTitle: 'Tab Two Title' }}
+    <TestStack.Navigator>
+      <TestStack.Screen
+        name="TestScreen"
+        component={TestScreen}
+        options={{ headerTitle: 'Test' }}
       />
-    </TabTwoStack.Navigator>
+    </TestStack.Navigator>
   );
+}
+
+const LearnStack = createStackNavigator<LearnParamList>();
+
+function LearnNavigator() {
+    return (
+        <LearnStack.Navigator>
+            <LearnStack.Screen
+                name="LearnScreen"
+                component={LearnScreen}
+                options={{headerTitle: 'Learn'}}
+            />
+        </LearnStack.Navigator>
+    );
 }
