@@ -3,6 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 
+import {BottomNavigation, BottomNavigationTab, Icon} from '@ui-kitten/components';
+
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import PracticeScreen from '../screens/PracticeScreen';
@@ -10,7 +12,28 @@ import TestScreen from '../screens/TestScreen';
 import LearnScreen from '../screens/LearnScreen';
 import { BottomTabParamList, PracticeParamList, TestParamList, LearnParamList } from '../types';
 
+const BellIcon = (props: any) => (
+    <Icon {... props} name='trending-up-outline'/>
+);
+const CheckIcon = (props: any) => (
+    <Icon {... props} name='checkmark-square-outline'/>
+);
+const BookIcon = (props: any) => (
+    <Icon {... props} name='book-open-outline'/>
+);
+
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
+
+const BottomTabBar = ({navigation, state}) => (
+    <BottomNavigation
+        selectedIndex={state.index}
+        onSelect={index => navigation.navigate(state.routeNames[index])}>
+        <BottomNavigationTab title='PRACTICE' icon={BellIcon}/>
+        <BottomNavigationTab title='TEST' icon={CheckIcon}/>
+        <BottomNavigationTab title='LEARN' icon={BookIcon}/>
+
+    </BottomNavigation>
+);
 
 export default function BottomTabNavigator() {
   const colorScheme = useColorScheme();
@@ -18,13 +41,10 @@ export default function BottomTabNavigator() {
   return (
     <BottomTab.Navigator
       initialRouteName="Practice"
-      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
+      tabBar={ props => <BottomTabBar {... props}/>}>
       <BottomTab.Screen
         name="Practice"
         component={PracticeNavigator}
-        options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="dumbbell" color={color} />,
-        }}
       />
       <BottomTab.Screen
         name="Test"

@@ -3,19 +3,24 @@ import {StyleSheet} from 'react-native';
 import {Button, Text, Layout, Divider} from '@ui-kitten/components';
 //import EditScreenInfo from '../components/EditScreenInfo';
 import { View } from '../components/Themed';
+import {createStackNavigator} from "@react-navigation/stack";
+import OptionsScreen from "./OptionsScreen";
+import SelectPracticeScreen from "./SelectPracticeScreen";
 
 export default function PracticeScreen() {
+
+    const Stack = createStackNavigator();
   return (
-    <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text style={styles.title}>Practice</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text>Select the thing you want to test</Text>
-      <Divider/>
-      <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-        <Button style={{width: 200}} appearance="outline">Pronunciation</Button>
-        <Button style={{width: 200}} appearance="outline">Spelling</Button>
-      </Layout>
-    </Layout>
+      <Stack.Navigator
+          initialRouteName= "SelectPracticeScreen">
+          <Stack.Screen
+            name="SelectPracticeScreen"
+            component={SelectPracticeScreen}
+          />
+          <Stack.Screen
+              name="OptionsScreen"
+              component = {OptionsScreen}/>
+    </Stack.Navigator>
   );
 }
 

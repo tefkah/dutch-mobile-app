@@ -1,20 +1,19 @@
 import * as React from 'react';
 import {StyleSheet} from 'react-native';
 import {Button, Text, Layout, Divider} from '@ui-kitten/components';
+//import Slider from "@ant-design/react-native/lib/slider";
 //import EditScreenInfo from '../components/EditScreenInfo';
-import { View } from '../components/Themed';
 
-export default function PracticeScreen() {
+
+
+export default function OptionsScreen({route, navigation}) {
+    const {mode} = route.params
     return (
         <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text style={styles.title}>Practice</Text>
-            <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-            <Text>Select the thing you want to test</Text>
+            <Text>Select your options</Text>
             <Divider/>
-            <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                <Button style={{width: 200}} appearance="outline">Pronunciation</Button>
-                <Button style={{width: 200}} appearance="outline">Spelling</Button>
-            </Layout>
+            <Text>{mode}</Text>
+            <Button onPress={()=>{navigation.navigate('Quiz')}}>GO</Button>
         </Layout>
     );
 }
