@@ -1,7 +1,7 @@
-import {Button, Divider, Layout, Text} from "@ui-kitten/components";
-import {View} from "../components/Themed";
+import { Button, Divider, Layout, Text } from "@ui-kitten/components";
+import { View } from "../components/Themed";
 import * as React from "react";
-import {StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 
 
 const styles = StyleSheet.create({
@@ -21,19 +21,18 @@ const styles = StyleSheet.create({
     },
 });
 
-export default function SelectPracticeScreen({navigation}) {
-    return(
-        <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text style={styles.title}>Practice</Text>
+export default function SelectPracticeScreen({ navigation }) {
+    return (
+        <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-            <Text>Select the thing you want to test</Text>
-            <Divider/>
-            <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                <Button style={{width: 200}} appearance="outline" onPress={() => navigation.navigate('OptionsScreen', {mode: 'pronunciation'})}>Pronunciation</Button>
-                <Button style={{width: 200}} appearance="outline">Spelling</Button>
+            <Text>Select the thing you want to test, nerd</Text>
+            <Divider />
+            <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                <Button style={{ width: 200 }} appearance="outline" onPress={() => navigation.navigate('OptionsScreen', { mode: 'pronunciation' })}>Pronunciation</Button>
+                <Button style={{ width: 200 }} appearance="outline">Spelling</Button>
             </Layout>
         </Layout>
-);
+    );
 }
 
 

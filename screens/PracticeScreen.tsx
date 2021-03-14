@@ -1,25 +1,33 @@
 import * as React from 'react';
-import {StyleSheet} from 'react-native';
-import {Button, Text, Layout, Divider} from '@ui-kitten/components';
+import { StyleSheet } from 'react-native';
+import { Button, Text, Layout, Divider } from '@ui-kitten/components';
 //import EditScreenInfo from '../components/EditScreenInfo';
 import { View } from '../components/Themed';
-import {createStackNavigator} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import OptionsScreen from "./OptionsScreen";
 import SelectPracticeScreen from "./SelectPracticeScreen";
+import QuizScreen from "./QuizScreen";
 
 export default function PracticeScreen() {
 
-    const Stack = createStackNavigator();
+  const Stack = createStackNavigator();
   return (
-      <Stack.Navigator
-          initialRouteName= "SelectPracticeScreen">
-          <Stack.Screen
-            name="SelectPracticeScreen"
-            component={SelectPracticeScreen}
-          />
-          <Stack.Screen
-              name="OptionsScreen"
-              component = {OptionsScreen}/>
+    <Stack.Navigator
+      initialRouteName="SelectPracticeScreen"
+      screenOptions={{
+        // headerShown: false,
+      }}>
+      <Stack.Screen
+        name="SelectPracticeScreen"
+        component={SelectPracticeScreen}
+      />
+      <Stack.Screen
+        name="OptionsScreen"
+        component={OptionsScreen} />
+      <Stack.Screen
+        name="Quiz"
+        component={QuizScreen}
+      />
     </Stack.Navigator>
   );
 }
