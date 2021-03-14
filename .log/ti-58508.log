@@ -1,0 +1,18 @@
+[12:27:39.666] Global cache location '/home/thomas/.cache/typescript/4.0', safe file path '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typingSafeList.json', types map path /home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json
+[12:27:39.667] Processing cache location '/home/thomas/.cache/typescript/4.0'
+[12:27:39.667] Trying to find '/home/thomas/.cache/typescript/4.0/package.json'...
+[12:27:39.669] Loaded content of '/home/thomas/.cache/typescript/4.0/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.531"},"devDependencies":{"@types/md5":"^2.3.0"}}
+[12:27:39.669] Loaded content of '/home/thomas/.cache/typescript/4.0/package-lock.json'
+[12:27:39.679] Adding entry into typings cache: 'md5' => '/home/thomas/.cache/typescript/4.0/node_modules/@types/md5/index.d.ts'
+[12:27:39.679] Finished processing cache location '/home/thomas/.cache/typescript/4.0'
+[12:27:39.679] Process id: 58515
+[12:27:39.679] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[12:27:39.679] validateDefaultNpmLocation: false
+[12:27:39.680] Npm config file: /home/thomas/.cache/typescript/4.0/package.json
+[12:27:39.680] Updating types-registry npm package...
+[12:27:39.680] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[12:27:40.303]     Succeeded. stdout:
+    
+    changed 1 package in 467ms
+
+[12:27:40.304] Updated types-registry npm package

@@ -1,0 +1,38 @@
+[16:39:37.188] Global cache location '/home/thomas/.cache/typescript/4.0', safe file path '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typingSafeList.json', types map path /home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json
+[16:39:37.189] Processing cache location '/home/thomas/.cache/typescript/4.0'
+[16:39:37.189] Trying to find '/home/thomas/.cache/typescript/4.0/package.json'...
+[16:39:37.190] Loaded content of '/home/thomas/.cache/typescript/4.0/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.531"},"devDependencies":{"@types/md5":"^2.3.0"}}
+[16:39:37.190] Loaded content of '/home/thomas/.cache/typescript/4.0/package-lock.json'
+[16:39:37.199] Adding entry into typings cache: 'md5' => '/home/thomas/.cache/typescript/4.0/node_modules/@types/md5/index.d.ts'
+[16:39:37.199] Finished processing cache location '/home/thomas/.cache/typescript/4.0'
+[16:39:37.199] Process id: 22473
+[16:39:37.199] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[16:39:37.199] validateDefaultNpmLocation: false
+[16:39:37.199] Npm config file: /home/thomas/.cache/typescript/4.0/package.json
+[16:39:37.200] Updating types-registry npm package...
+[16:39:37.200] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[16:39:38.152]     Succeeded. stdout:
+    
+    up to date, audited 4 packages in 743ms
+
+found 0 vulnerabilities
+
+[16:39:38.153] Updated types-registry npm package
+[16:41:3.776] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es5.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.scripthost.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/thomas/Projects/dutch-mobile-app/questionAPI/index.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/soundbox.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/QuestionBoxSpelling.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/Result.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/Quiz.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["@ant-design/icons","antd"],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/web_app_components","kind":"discover"}
+[16:41:3.809] Loaded safelist from types map file '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json'
+[16:41:3.810] Explicitly included types: []
+[16:41:3.812] Inferred typings from unresolved imports: ["@ant-design/icons","antd"]
+[16:41:3.812] Result: {"cachedTypingPaths":[],"newTypingNames":["@ant-design/icons","antd"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components","/home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules","/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[16:41:3.812] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["@ant-design/icons","antd"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components","/home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules","/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[16:41:3.812] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components
+[16:41:3.815] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules
+[16:41:3.815] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components
+[16:41:3.815] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules
+[16:41:3.816] Installing typings ["@ant-design/icons","antd"]
+[16:41:3.816] '@ant-design/icons':: Entry for package 'ant-design__icons' does not exist in local types registry - skipping...
+[16:41:3.816] 'antd':: Entry for package 'antd' does not exist in local types registry - skipping...
+[16:41:3.816] All typings are known to be missing or invalid - no need to install more typings
+[16:41:3.816] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":["@ant-design/icons","antd"],"kind":"action::set"}
+[16:41:3.817] Response has been sent.
+[17:27:43.780] Parent process has exited, shutting down...

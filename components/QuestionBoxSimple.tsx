@@ -10,33 +10,34 @@ export default function QuestionBox(props: any) {
 
   const Header: any = () => (
     <View {...props}>
-      <Text category='h4'>  {title} </Text>
+      <Text category='h6'>  {title} </Text>
     </View>
   );
 
   return (
     <Layout style={styles.topContainer} level='1' >
-      <Card style={styles.card} header={Header}>
+      <Card header={Header}>
         <View >
+          <Text>{props.antwoord}</Text>
           <Button
-          // className="answerBtn"
-          //onPress={() => {
-          //  props.selected(+(props.options[0]===props.antwoord));
-          //   setAnswered(1);
-          //    }
-          //  }
+            // className="answerBtn"
+            onPress={() => {
+              props.selected(+(props.options[0] === props.antwoord));
+              setAnswered(1);
+            }
+            }
           //disabled={+(answered)}
           //type={(answered===1) ? "primary" : "default"}
           >
             {props.options[0]}
           </Button>
           <Button
-          //className="answerBtn"
-          //onPress={() => {
-          //  props.selected(+(props.options[1]===props.antwoord));
-          //  setAnswered(2);
-          //  }
-          //}
+            //className="answerBtn"
+            onPress={() => {
+              props.selected(+(props.options[1] === props.antwoord));
+              setAnswered(2);
+            }
+            }
           //disabled={+(answered)}
           //type={(answered===2) ? "primary" : "default"}
           >

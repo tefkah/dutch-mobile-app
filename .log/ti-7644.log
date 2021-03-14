@@ -1,0 +1,34 @@
+[10:15:4.168] Global cache location '/home/thomas/.cache/typescript/4.0', safe file path '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typingSafeList.json', types map path /home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json
+[10:15:4.170] Processing cache location '/home/thomas/.cache/typescript/4.0'
+[10:15:4.170] Trying to find '/home/thomas/.cache/typescript/4.0/package.json'...
+[10:15:4.171] Loaded content of '/home/thomas/.cache/typescript/4.0/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.532"},"devDependencies":{"@types/md5":"^2.3.0"}}
+[10:15:4.171] Loaded content of '/home/thomas/.cache/typescript/4.0/package-lock.json'
+[10:15:4.188] Adding entry into typings cache: 'md5' => '/home/thomas/.cache/typescript/4.0/node_modules/@types/md5/index.d.ts'
+[10:15:4.188] Finished processing cache location '/home/thomas/.cache/typescript/4.0'
+[10:15:4.188] Process id: 7651
+[10:15:4.189] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[10:15:4.189] validateDefaultNpmLocation: false
+[10:15:4.189] Npm config file: /home/thomas/.cache/typescript/4.0/package.json
+[10:15:4.189] Updating types-registry npm package...
+[10:15:4.189] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[10:15:5.178]     Succeeded. stdout:
+    
+    up to date, audited 4 packages in 823ms
+
+found 0 vulnerabilities
+
+[10:15:5.178] Updated types-registry npm package
+[10:28:1.343] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es5.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.scripthost.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/thomas/Projects/dutch-mobile-app/web_app_components/OptionsMenu.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["antd"],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/web_app_components","kind":"discover"}
+[10:28:1.364] Loaded safelist from types map file '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json'
+[10:28:1.364] Explicitly included types: []
+[10:28:1.366] Inferred typings from unresolved imports: ["antd"]
+[10:28:1.366] Result: {"cachedTypingPaths":[],"newTypingNames":["antd"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[10:28:1.366] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["antd"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[10:28:1.366] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components
+[10:28:1.368] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules
+[10:28:1.368] Installing typings ["antd"]
+[10:28:1.369] 'antd':: Entry for package 'antd' does not exist in local types registry - skipping...
+[10:28:1.369] All typings are known to be missing or invalid - no need to install more typings
+[10:28:1.369] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":["antd"],"kind":"action::set"}
+[10:28:1.369] Response has been sent.

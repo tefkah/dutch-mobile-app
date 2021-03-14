@@ -1,0 +1,87 @@
+[14:21:5.133] Global cache location '/home/thomas/.cache/typescript/4.0', safe file path '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typingSafeList.json', types map path /home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json
+[14:21:5.133] Processing cache location '/home/thomas/.cache/typescript/4.0'
+[14:21:5.133] Trying to find '/home/thomas/.cache/typescript/4.0/package.json'...
+[14:21:5.133] Finished processing cache location '/home/thomas/.cache/typescript/4.0'
+[14:21:5.134] Process id: 15953
+[14:21:5.134] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[14:21:5.134] validateDefaultNpmLocation: false
+[14:21:5.134] Npm config file: /home/thomas/.cache/typescript/4.0/package.json
+[14:21:5.134] Npm config file: '/home/thomas/.cache/typescript/4.0/package.json' is missing, creating new one...
+[14:21:5.135] Updating types-registry npm package...
+[14:21:5.135] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[14:21:6.20]     Succeeded. stdout:
+    
+    added 1 package, and audited 2 packages in 734ms
+
+found 0 vulnerabilities
+
+[14:21:6.20] Updated types-registry npm package
+[14:49:47.417] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/screens","kind":"discover"}
+[14:49:47.554] Loaded safelist from types map file '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json'
+[14:49:47.554] Explicitly included types: []
+[14:49:47.555] Inferred typings from unresolved imports: []
+[14:49:47.555] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[14:49:47.555] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[14:49:47.556] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/screens/bower_components
+[14:49:47.558] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/screens/node_modules
+[14:49:47.559] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[14:49:47.559] Response has been sent.
+[14:49:47.559] No new typings were requested as a result of typings discovery
+[14:58:19.426] Got install request {"projectName":"/dev/null/inferredProject2*","fileNames":["/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es5.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.scripthost.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/thomas/Projects/dutch-mobile-app/questionAPI/index.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/soundbox.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/QuestionBoxSpelling.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/Result.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/Quiz.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["@ant-design/icons","antd","md5"],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/web_app_components","kind":"discover"}
+[14:58:19.428] Explicitly included types: []
+[14:58:19.429] Inferred typings from unresolved imports: ["@ant-design/icons","antd","md5"]
+[14:58:19.429] Result: {"cachedTypingPaths":[],"newTypingNames":["@ant-design/icons","antd","md5"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components","/home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules","/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[14:58:19.429] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["@ant-design/icons","antd","md5"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components","/home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules","/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[14:58:19.429] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components
+[14:58:19.430] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules
+[14:58:19.431] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components
+[14:58:19.431] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules
+[14:58:19.431] Installing typings ["@ant-design/icons","antd","md5"]
+[14:58:19.432] '@ant-design/icons':: Entry for package 'ant-design__icons' does not exist in local types registry - skipping...
+[14:58:19.432] 'antd':: Entry for package 'antd' does not exist in local types registry - skipping...
+[14:58:19.432] Npm config file: /home/thomas/.cache/typescript/4.0/package.json
+[14:58:19.432] Sending response:
+    {"kind":"event::beginInstallTypes","eventId":1,"typingsInstallerVersion":"4.0.5","projectName":"/dev/null/inferredProject2*"}
+[14:58:19.432] Response has been sent.
+[14:58:19.433] #1 with arguments'["@types/md5@ts4.0"]'.
+[14:58:19.433] Exec: /usr/bin/npm install --ignore-scripts @types/md5@ts4.0 --save-dev --user-agent="typesInstaller/4.0.5"
+[14:58:20.669]     Succeeded. stdout:
+    
+    added 2 packages, and audited 4 packages in 876ms
+
+found 0 vulnerabilities
+
+[14:58:20.669] npm install #1 took: 1236 ms
+[14:58:20.669] Installed typings ["@types/md5@ts4.0"]
+[14:58:20.677] Installed typing files ["/home/thomas/.cache/typescript/4.0/node_modules/@types/md5/index.d.ts"]
+[14:58:20.677] Sending response:
+    {"projectName":"/dev/null/inferredProject2*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/thomas/.cache/typescript/4.0/node_modules/@types/md5/index.d.ts"],"unresolvedImports":["@ant-design/icons","antd","md5"],"kind":"action::set"}
+[14:58:20.678] Response has been sent.
+[14:58:20.678] Sending response:
+    {"kind":"event::endInstallTypes","eventId":1,"projectName":"/dev/null/inferredProject2*","packagesToInstall":["@types/md5@ts4.0"],"installSuccess":true,"typingsInstallerVersion":"4.0.5"}
+[14:58:20.678] Response has been sent.
+[14:58:21.71] Got install request {"projectName":"/dev/null/inferredProject2*","fileNames":["/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es5.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.scripthost.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/thomas/Projects/dutch-mobile-app/questionAPI/index.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/soundbox.js","/home/thomas/.cache/typescript/4.0/node_modules/@types/md5/index.d.ts","/home/thomas/Projects/dutch-mobile-app/web_app_components/QuestionBoxSpelling.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/Result.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/Quiz.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["@ant-design/icons","antd"],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/web_app_components","kind":"discover"}
+[14:58:21.71] Explicitly included types: []
+[14:58:21.72] Inferred typings from unresolved imports: ["@ant-design/icons","antd"]
+[14:58:21.72] Result: {"cachedTypingPaths":[],"newTypingNames":["@ant-design/icons","antd"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components","/home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules","/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[14:58:21.72] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["@ant-design/icons","antd"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components","/home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules","/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[14:58:21.72] Installing typings ["@ant-design/icons","antd"]
+[14:58:21.72] '@ant-design/icons':: Entry for package 'ant-design__icons' does not exist in local types registry - skipping...
+[14:58:21.72] 'antd':: Entry for package 'antd' does not exist in local types registry - skipping...
+[14:58:21.72] All typings are known to be missing or invalid - no need to install more typings
+[14:58:21.72] Sending response:
+    {"projectName":"/dev/null/inferredProject2*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":["@ant-design/icons","antd"],"kind":"action::set"}
+[14:58:21.72] Response has been sent.
+[14:58:21.465] Got install request {"projectName":"/dev/null/inferredProject2*","fileNames":["/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es5.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.scripthost.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/thomas/Projects/dutch-mobile-app/questionAPI/index.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/soundbox.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/QuestionBoxSpelling.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/Result.js","/home/thomas/Projects/dutch-mobile-app/web_app_components/Quiz.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["@ant-design/icons","antd"],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/web_app_components","kind":"discover"}
+[14:58:21.465] Explicitly included types: []
+[14:58:21.465] Inferred typings from unresolved imports: ["@ant-design/icons","antd"]
+[14:58:21.465] Result: {"cachedTypingPaths":[],"newTypingNames":["@ant-design/icons","antd"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components","/home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules","/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[14:58:21.466] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["@ant-design/icons","antd"],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/questionAPI/bower_components","/home/thomas/Projects/dutch-mobile-app/questionAPI/node_modules","/home/thomas/Projects/dutch-mobile-app/web_app_components/bower_components","/home/thomas/Projects/dutch-mobile-app/web_app_components/node_modules"]}
+[14:58:21.466] Installing typings ["@ant-design/icons","antd"]
+[14:58:21.466] '@ant-design/icons':: Entry for package 'ant-design__icons' does not exist in local types registry - skipping...
+[14:58:21.466] 'antd':: Entry for package 'antd' does not exist in local types registry - skipping...
+[14:58:21.466] All typings are known to be missing or invalid - no need to install more typings
+[14:58:21.466] Sending response:
+    {"projectName":"/dev/null/inferredProject2*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":["@ant-design/icons","antd"],"kind":"action::set"}
+[14:58:21.466] Response has been sent.
