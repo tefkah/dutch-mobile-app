@@ -1035,13 +1035,6 @@ const qBank: any =
     },
     {
       "options": [
-        "na",
-        "no"
-      ],
-      "questionId": 4750
-    },
-    {
-      "options": [
         "pand",
         "pond"
       ],
@@ -1563,13 +1556,6 @@ const qBank: any =
     }
   ],
   "aa, e": [
-    {
-      "options": [
-        "deaal",
-        "deel"
-      ],
-      "questionId": 334
-    },
     {
       "options": [
         "aan",
@@ -3966,13 +3952,6 @@ const qBank: any =
     },
     {
       "options": [
-        "nee",
-        "no"
-      ],
-      "questionId": 4750
-    },
-    {
-      "options": [
         "eerder",
         "order"
       ],
@@ -5013,20 +4992,6 @@ const qBank: any =
     },
     {
       "options": [
-        "no",
-        "nu"
-      ],
-      "questionId": 1145
-    },
-    {
-      "options": [
-        "no",
-        "nu"
-      ],
-      "questionId": 1146
-    },
-    {
-      "options": [
         "stok",
         "stuk"
       ],
@@ -5939,13 +5904,6 @@ const qBank: any =
         "goud"
       ],
       "questionId": 625
-    },
-    {
-      "options": [
-        "no",
-        "nou"
-      ],
-      "questionId": 1143
     },
     {
       "options": [
