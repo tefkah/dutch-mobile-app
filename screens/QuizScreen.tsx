@@ -13,8 +13,6 @@ const SoundIcon = (props: any) => (
 
 export default function QuizScreen({ route, navigation }) {
 
-
-
     const Header = (props: any) => (
         <View {...props}>
             <Text category='h6'> Is it {} or {props.opt2} </Text>
@@ -26,13 +24,18 @@ export default function QuizScreen({ route, navigation }) {
         return options;
     }
 
-
+    const { vowels } = route.params;
     //const { gameOptions } = route.params
     const gameOptions: any = [5, "a, aa"];
+    const { numberOfQuestions } = route.params;
     return (
         //<QuestionBox options={optionFunc()} />
         <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Quiz gameOptions={gameOptions} />
+            <Quiz
+                vowels={vowels}
+                numberOfQuestions={numberOfQuestions}
+                navigation={navigation}
+            />
         </Layout>
     );
 }

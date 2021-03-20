@@ -2,13 +2,15 @@ import React, { Component } from "react";
 //import "../assets/style.css";
 import QuizService from "../questionAPI";
 import QuestionBox from "./QuestionBoxSimple";
-import Result from "./Result";
+import Result from "./ResultThing";
 import { Card, Text, Button } from "@ui-kitten/components";
 import { View } from "react-native";
 
 
 export interface Props {
-  gameOptions: any[],
+  numberOfQuestions: number,
+  vowels: any[],
+  navigation: any,
 }
 
 interface State {
@@ -17,6 +19,7 @@ interface State {
   score: number,
   responses: number,
   numberOfQuestions: number,
+  vowel: any[],
 };
 class Quiz extends Component<Props, State> {
   constructor(props: any) {
@@ -26,13 +29,15 @@ class Quiz extends Component<Props, State> {
       answers: [],
       score: 0,
       responses: 0,
-      numberOfQuestions: props.gameOptions[0],
+      numberOfQuestions: props.numberOfQuestions,
+      vowel: props.vowels,
     };
   };
 
 
+
   getQuestions = () => {
-    QuizService(this.state.numberOfQuestions, this.props.gameOptions[1]).then(options => {
+    QuizService(this.state.numberOfQuestions, this.state.vowel[0]).then(options => {
       let randomAnswers = options.map((option) => {
         let answer: string = option.options[Math.floor(Math.random() * option.options.length)];
         return {
@@ -80,7 +85,7 @@ class Quiz extends Component<Props, State> {
           this.state.responses < this.state.numberOfQuestions &&
           <QuestionBox
             antwoord={this.state.questionBank[this.state.responses].correctAnswer}
-            options={this.state.questionBank[this.state.responses].options}
+            options={this.state.questionBank[this.state.responses].options.sort(() => Math.random() - 0.5)}
             key={this.state.questionBank[this.state.responses].questionId}
             selected={this.computeAnswer}
           />
@@ -89,10 +94,16 @@ class Quiz extends Component<Props, State> {
 
         {
           this.state.responses === this.state.numberOfQuestions ? (
-            <Button
-              onPress={() => {
-                this.playAgain()
-              }}> Again {this.state.score}/{this.state.numberOfQuestions} </Button>
+            <Result
+              numberOfQuestions={this.state.numberOfQuestions}
+              score={this.state.score}
+              playAgain={this.playAgain}
+              navigation={this.props.navigation}
+            />
+            //<Button
+            //  onPress={() => {
+            //    this.playAgain()
+            //  }}> Again {this.state.score}/{this.state.numberOfQuestions} </Button>
             //<Result
             //  score={this.state.score}
             //  playAgain={this.playAgain}

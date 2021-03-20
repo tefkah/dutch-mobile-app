@@ -6581,6 +6581,11 @@ react-native-collapsible@^1.5.2:
   dependencies:
     prop-types "^15.6.2"
 
+react-native-css-vh-vw@^1.0.4:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-css-vh-vw/-/react-native-css-vh-vw-1.0.5.tgz#dfa8e2fde22fa6a36e43101c713f2dcd13a00cad"
+  integrity sha512-pY0gIB1xc1xLp3VH6mji7zHfiOc7BpFFCtOTpMeyjfoQ4CacmcCD6vTZuM2ReuK+oXdWrbx7CquTHxl44aHcBA==
+
 react-native-eva-icons@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/react-native-eva-icons/-/react-native-eva-icons-1.3.1.tgz#1e6e019b0fd3cb1669db50bd6bbdaa6d89327593"
@@ -6619,6 +6624,18 @@ react-native-screens@~2.15.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.15.0.tgz#9b97c1881c4fcdf304bf363f0013225901625f44"
   integrity sha512-qTSQPy0WKHtlb8xt5gY0Gt6sdvfQUQAnFSqgsggW9UEvySbkHzpqOrOYNA79Ca8oXO0dCFwp6X8buIiDefa7+Q==
+
+react-native-sectioned-multi-select@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/react-native-sectioned-multi-select/-/react-native-sectioned-multi-select-0.8.1.tgz#5ec8e4fe4136c36dc5df1222b288896760e43c86"
+  integrity sha512-iH/5PHBo64yFhKzjd+6sCG0aEvgDnUwpn3I7R0ohcGo/+gJdw47mYmJMTwJTmR9JqBFXHx+2bkQi4ij2ghfqRQ==
+
+react-native-slider-picker@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/react-native-slider-picker/-/react-native-slider-picker-1.1.3.tgz#d569ea9498d3fed869f64ec9a253646ff29173b2"
+  integrity sha512-3i+SfM5q3JmxXHGiYZo8edfdD5odpmmoPI3n8FkwsNpe+JWcSTIsfgAhwiH0SDBARY+Z+UX/3Klkn0DkqXYRTA==
+  dependencies:
+    react-native-css-vh-vw "^1.0.4"
 
 react-native-svg@12.1.0:
   version "12.1.0"

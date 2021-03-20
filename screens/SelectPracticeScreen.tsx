@@ -25,11 +25,14 @@ export default function SelectPracticeScreen({ navigation }) {
     return (
         <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-            <Text>Select the thing you want to test, nerd</Text>
+            <Text>Select the thing you want to practice, nerd</Text>
             <Divider />
             <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Button style={{ width: 200 }} appearance="outline" onPress={() => navigation.navigate('OptionsScreen', { mode: 'pronunciation' })}>Pronunciation</Button>
+                <Button style={{ width: 200 }} appearance="outline" onPress={() => navigation.navigate('OptionsScreen', { mode: 'pronunciation' })}>Listening</Button>
+                <Divider style={{ height: '1%' }} />
                 <Button style={{ width: 200 }} appearance="outline">Spelling</Button>
+                <Divider style={{ height: '1%' }} />
+                <Button style={{ width: 200 }} appearance="outline">OooOoOOOo</Button>
             </Layout>
         </Layout>
     );
