@@ -11,6 +11,7 @@ export interface Props {
   numberOfQuestions: number,
   vowels: any[],
   navigation: any,
+  hardMode: boolean,
 }
 
 interface State {
@@ -20,6 +21,7 @@ interface State {
   responses: number,
   numberOfQuestions: number,
   vowel: any[],
+  hardMode: boolean,
 };
 class Quiz extends Component<Props, State> {
   constructor(props: any) {
@@ -31,6 +33,7 @@ class Quiz extends Component<Props, State> {
       responses: 0,
       numberOfQuestions: props.numberOfQuestions,
       vowel: props.vowels,
+      hardMode: props.hardMode,
     };
   };
 
@@ -88,8 +91,8 @@ class Quiz extends Component<Props, State> {
             options={this.state.questionBank[this.state.responses].options.sort(() => Math.random() - 0.5)}
             key={this.state.questionBank[this.state.responses].questionId}
             selected={this.computeAnswer}
+            hardMode={this.state.hardMode}
           />
-
         }
 
         {

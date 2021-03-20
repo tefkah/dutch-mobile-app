@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Button, Text, Layout, Divider } from '@ui-kitten/components';
+import { Button, Text, Layout, Divider, Toggle } from '@ui-kitten/components';
 //import Slider from "@ant-design/react-native/lib/slider";
 //import EditScreenInfo from '../components/EditScreenInfo';
 import SectionedMultiSelect from 'react-native-sectioned-multi-select';
@@ -99,6 +99,8 @@ export default function OptionsScreen({ route, navigation }) {
     const [selectItems, setSelectItems] = React.useState([]);
     const [selectedObjects, setSelectedObjects] = React.useState([]);
     const [numberOfQuestions, setNumber] = React.useState(10);
+    const [hardMode, setHardMode] = React.useState(false);
+
     const onSelectedItemsChange = (selected) => {
         setSelectItems(selected);
         //    console.log(vowel[0].children);
@@ -107,8 +109,11 @@ export default function OptionsScreen({ route, navigation }) {
     const onSelectedObjects = selected => {
         setSelectedObjects(selected);
         //console.log(selectedObjects);
-
     }
+
+    const onCheckedChange = (isChecked: boolean) => {
+        setHardMode(isChecked);
+    };
 
     const vowelList = () => {
         const vowelz: string[] = [];
@@ -117,8 +122,7 @@ export default function OptionsScreen({ route, navigation }) {
         }
         console.log(vowelz);
         return (vowelz);
-    }
-
+    };
 
     const makeVowelCombos = (v: any[]) => {
         const vowelCombos: string[] = [];
@@ -129,7 +133,7 @@ export default function OptionsScreen({ route, navigation }) {
             }
         }
         return (vowelCombos);
-    }
+    };
 
     return (
         <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -178,6 +182,9 @@ export default function OptionsScreen({ route, navigation }) {
             <Text>{numberOfQuestions}</Text>
             <Divider />
             <Text>{mode}</Text>
+            <Toggle checked={hardMode} onChange={onCheckedChange}>
+                {`Hardmode (type instead of multiple choice): ${hardMode}`}
+            </Toggle>
             <Button onPress={() => {
                 const v = vowelList();
                 if (v.length < 2) {
@@ -185,7 +192,8 @@ export default function OptionsScreen({ route, navigation }) {
                     console.log(v);
                     const w = makeVowelCombos(v);
                     console.log(numberOfQuestions);
-                    navigation.navigate('Quiz', { vowels: w, numberOfQuestions: numberOfQuestions });
+                    console.log(hardMode + "in optionsscreen");
+                    navigation.navigate('Quiz', { vowels: w, numberOfQuestions: numberOfQuestions, hardMode: hardMode });
                 }
             }
             }

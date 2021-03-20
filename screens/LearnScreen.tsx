@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-
+import { Button } from "@ui-kitten/components";
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
@@ -9,6 +9,15 @@ export default function LearnScreen() {
         <View style={styles.container}>
             <Text style={styles.title}>Learn</Text>
             <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+            <Button>
+                Learn IPA
+            </Button>
+            <Button>
+                Short v. Long vowels
+            </Button>
+            <Button>
+                Diphthongs
+            </Button>
             <EditScreenInfo path="/screens/LearnScreen.tsx" />
         </View>
     );

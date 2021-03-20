@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Icon, Button, Card, Layout, Text } from "@ui-kitten/components";
+import { Icon, Button, Card, Layout, Text, Input } from "@ui-kitten/components";
 import { View, StyleSheet } from "react-native";
 import { Audio } from "expo-av";
 import yes from "../assets/correct.mp3";
@@ -10,11 +10,14 @@ import md5 from "md5";
 
 export default function QuestionBox(props: any) {
   //const shuffledOptions: string[] = props.options.sort(() => Math.random() - 0.5);
-  let title: string = "Is it " + props.options[0] + " or " + props.options[1] + "?";
+  //let titleEasy: string = "Is it " + props.options[0] + " or " + props.options[1] + "?";
+  //let titleHard:string = "What is being said here";
+  let title: string = (props.hardMode ? "What is being said here?" : "Is it " + props.options[0] + " or " + props.options[1] + "?");
   const [answered, setAnswered] = React.useState(0);
-
   const [correct, setCorrect] = React.useState();
   const [sound, setSound] = React.useState();
+  const [inputText, setInputText] = React.useState("");
+
   let filename: string = "Nl-" + props.antwoord + ".ogg";
   let url: string = "https://upload.wikimedia.org/wikipedia/commons/" + md5(filename).substring(0, 1) + "/" + md5(filename).substring(0, 2) + "/" + filename;
   const loc: string = '../assets/audiofiles/' + filename;
@@ -101,14 +104,34 @@ export default function QuestionBox(props: any) {
   const SoundIcon = (props) => (
     <Icon {...props} name='volume-up' />
   );
+  const subIcon = (props) => (
+    <Icon {...props} name='corner-down-left' />
+  )
 
-
-
-  return (
-    <Layout style={styles.topContainer} level='1' >
-      <Card header={Header} style={{ height: '200%' }}>
-        <View style={{ height: '30%', flex: 1, flexDirection: 'row' }}>
-          <Button onPress={playSound} appearance='ghost' accessoryLeft={SoundIcon} />
+  const hardModeViews = () => {
+    if (props.hardMode) {
+      return (
+        <View style={{ flex: 1, flexDirection: 'row' }}>
+          <Input
+            placeholder='...'
+            value={inputText}
+            onChangeText={nextValue => setInputText(nextValue)}
+            style={{ width: 200 }}
+          />
+          <Button
+            accessoryLeft={subIcon}
+            onPress={() => {
+              let inp: string = inputText.trim().toLowerCase();
+              props.selected(+(inp === props.antwoord));
+              buzz(inp)
+              console.log(inp + "<- input answer -> " + props.antwoord);
+            }}
+          />
+        </View>
+      );
+    } else {
+      return (
+        <View style={{ flex: 1, flexDirection: 'row' }}>
           <Button
             // className="answerBtn"
             onPress={() => {
@@ -131,6 +154,17 @@ export default function QuestionBox(props: any) {
           >
             {props.options[1]}
           </Button>
+        </View>
+      );
+    }
+  };
+
+  return (
+    <Layout style={styles.topContainer} level='1' >
+      <Card header={Header} style={{ height: '200%', width: 350 }}>
+        <View style={{ height: '30%', flex: 1, flexDirection: 'row' }}>
+          <Button onPress={playSound} appearance='ghost' accessoryLeft={SoundIcon} />
+          {hardModeViews()}
         </View>
       </Card>
     </Layout>
