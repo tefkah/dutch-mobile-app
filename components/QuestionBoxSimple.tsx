@@ -13,14 +13,55 @@ export default function QuestionBox(props: any) {
   let title: string = "Is it " + shuffledOptions[0] + " or " + shuffledOptions[1] + "?";
   const [answered, setAnswered] = React.useState(0);
 
+  const [correct, setCorrect] = React.useState();
   const [sound, setSound] = React.useState();
   let filename: string = "Nl-" + props.antwoord + ".ogg";
   let url: string = "https://upload.wikimedia.org/wikipedia/commons/" + md5(filename).substring(0, 1) + "/" + md5(filename).substring(0, 2) + "/" + filename;
-  async function playSound() {
+  const loc: string = '../assets/audiofiles/' + filename;
 
-    const { sound: playbackObject } = await Audio.Sound.createAsync(
+  async function buzz(input: string) {
+    if (input === props.antwoord) {
+      //const { correct } = await Audio.Sound.createAsync(
+      //  require('../assets/correct.mp3')
+      //);
+      //} else {
+      //  const { correct } = await Audio.Sound.createAsync(
+      //    require('../assets/wrong.mp3')
+      //  );
+      //}
+      //setCorrect(correct);
+      //console.log(correct);
+      //await correct.playAsync();
+
+      const yes = new Audio.Sound();
+      try {
+        await yes.loadAsync(require('../assets/correct.mp3'), false);
+        await yes.playAsync();
+        console.log('palyin correct');
+        //await yes.unloadAsync();
+        console.log('unload correct');
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      const no = new Audio.Sound();
+      try {
+        await no.loadAsync(require('../assets/wrong.mp3'), false);
+        await no.playAsync();
+        console.log('palyin wrong');
+        //await yes.unloadAsync();
+        console.log('unload wrong');
+      } catch (error) {
+        console.log(error);
+      }
+
+    }
+
+  }
+
+  async function playSound() {
+    const { sound } = await Audio.Sound.createAsync(
       { uri: url },
-      { shouldPlay: true }
     );
     setSound(sound);
     console.log('playin sound');
@@ -35,6 +76,16 @@ export default function QuestionBox(props: any) {
       }
       : undefined;
   }, [sound]);
+
+
+  React.useEffect(() => {
+    return correct
+      ? () => {
+        console.log('Unloading Sound');
+        correct.unloadAsync();
+      }
+      : undefined;
+  }, [correct]);
   //  let ding = new Audio(yes);
   //  let dong = new Audio(no);
   //  const buzzer = (option) => {
@@ -60,6 +111,7 @@ export default function QuestionBox(props: any) {
             onPress={() => {
               props.selected(+(props.options[0] === props.antwoord));
               setAnswered(1);
+              buzz(props.options[0]);
             }
             }
           //disabled={+(answered)}
@@ -72,6 +124,7 @@ export default function QuestionBox(props: any) {
             onPress={() => {
               props.selected(+(props.options[1] === props.antwoord));
               setAnswered(2);
+              buzz(props.options[1]);
             }
             }
           //disabled={+(answered)}
