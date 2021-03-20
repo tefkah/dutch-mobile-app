@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Card, Layout, Text } from "@ui-kitten/components";
+import { Icon, Button, Card, Layout, Text } from "@ui-kitten/components";
 import { View, StyleSheet } from "react-native";
 import { Audio } from "expo-av";
 import yes from "../assets/correct.mp3";
@@ -9,8 +9,8 @@ import md5 from "md5";
 
 
 export default function QuestionBox(props: any) {
-  const shuffledOptions: string[] = props.options.sort(() => Math.random() - 0.5);
-  let title: string = "Is it " + shuffledOptions[0] + " or " + shuffledOptions[1] + "?";
+  //const shuffledOptions: string[] = props.options.sort(() => Math.random() - 0.5);
+  let title: string = "Is it " + props.options[0] + " or " + props.options[1] + "?";
   const [answered, setAnswered] = React.useState(0);
 
   const [correct, setCorrect] = React.useState();
@@ -35,7 +35,7 @@ export default function QuestionBox(props: any) {
 
       const yes = new Audio.Sound();
       try {
-        await yes.loadAsync(require('../assets/correct.mp3'), false);
+        await yes.loadAsync(require('../assets/correct_soft.mp3'), false);
         await yes.playAsync();
         console.log('palyin correct');
         //await yes.unloadAsync();
@@ -46,7 +46,7 @@ export default function QuestionBox(props: any) {
     } else {
       const no = new Audio.Sound();
       try {
-        await no.loadAsync(require('../assets/wrong.mp3'), false);
+        await no.loadAsync(require('../assets/wrong_softer.mp3'), false);
         await no.playAsync();
         console.log('palyin wrong');
         //await yes.unloadAsync();
@@ -98,14 +98,17 @@ export default function QuestionBox(props: any) {
     </View>
   );
 
+  const SoundIcon = (props) => (
+    <Icon {...props} name='volume-up' />
+  );
+
 
 
   return (
     <Layout style={styles.topContainer} level='1' >
-      <Card header={Header}>
-        <View >
-          <Button onPress={playSound}> Play Sound </Button>
-          <Text>{props.antwoord} {url}</Text>
+      <Card header={Header} style={{ height: '200%' }}>
+        <View style={{ height: '30%', flex: 1, flexDirection: 'row' }}>
+          <Button onPress={playSound} appearance='ghost' accessoryLeft={SoundIcon} />
           <Button
             // className="answerBtn"
             onPress={() => {
@@ -114,8 +117,6 @@ export default function QuestionBox(props: any) {
               buzz(props.options[0]);
             }
             }
-          //disabled={+(answered)}
-          //type={(answered===1) ? "primary" : "default"}
           >
             {props.options[0]}
           </Button>
@@ -127,8 +128,6 @@ export default function QuestionBox(props: any) {
               buzz(props.options[1]);
             }
             }
-          //disabled={+(answered)}
-          //type={(answered===2) ? "primary" : "default"}
           >
             {props.options[1]}
           </Button>
