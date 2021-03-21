@@ -23,6 +23,9 @@ import IPAConsonantScreen from '../screens/IPAConsonantScreen';
 import IPAVowelScreen from '../screens/IPAVowelScreen';
 import IPAExplanationScreen from '../screens/IPAExplanationScreen';
 
+import { ThemeContext } from '../components/theme-context';
+
+
 const BellIcon = (props: any) => (
   <Icon {...props} name='trending-up-outline' />
 );
@@ -47,7 +50,8 @@ const BottomTabBar = ({ navigation, state }) => (
 );
 
 export default function BottomTabNavigator() {
-  const colorScheme = useColorScheme();
+  //  const colorScheme = useColorScheme();
+  const themeContext = React.useContext(ThemeContext);
 
   return (
     <BottomTab.Navigator
@@ -87,18 +91,27 @@ const PracticeStack = createStackNavigator<PracticeParamList>();
 
 function PracticeNavigator() {
   return (
-    <PracticeStack.Navigator>
+    <PracticeStack.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#222222',
+        },
+      }}>
       <PracticeStack.Screen
         name="SelectPracticeScreen"
         component={SelectPracticeScreen}
-        options={{ headerTitle: 'Practice' }}
+        options={{
+          headerTitle: 'Practice',
+        }}
       />
       <PracticeStack.Screen
         name="OptionsScreen"
+        options={{ headerTitle: 'Practice Options' }}
         component={OptionsScreen} />
       <PracticeStack.Screen
         name="Quiz"
         component={QuizScreen}
+        options={{ headerTitle: 'Quiz' }}
       />
     </PracticeStack.Navigator>
   );

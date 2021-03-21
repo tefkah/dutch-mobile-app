@@ -8,13 +8,21 @@ import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, Layout, Text, IconRegistry } from "@ui-kitten/components";
-import { default as theme } from './assets/kitten-colors.json';
+import { default as customTheme } from './assets/kitten-colors.json';
 import { EvaIconsPack } from "@ui-kitten/eva-icons";
+import { ThemeContext } from './components/theme-context';
 
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
+
+  const [theme, setTheme] = React.useState('light');
+
+  const toggleTheme = () => {
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(nextTheme);
+  };
 
   if (!isLoadingComplete) {
     return null;
@@ -22,12 +30,14 @@ export default function App() {
     return (
       <>
         <IconRegistry icons={EvaIconsPack} />
-        <ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
-          <SafeAreaProvider>
-            <Navigation /*colorScheme={colorScheme}*/ />
-            <StatusBar />
-          </SafeAreaProvider>
-        </ApplicationProvider>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+          <ApplicationProvider {...eva} theme={{ ...eva[theme], ...customTheme }}>
+            <SafeAreaProvider>
+              <Navigation /*colorScheme={colorScheme}*/ />
+              <StatusBar />
+            </SafeAreaProvider>
+          </ApplicationProvider>
+        </ThemeContext.Provider>
       </>
     );
   }

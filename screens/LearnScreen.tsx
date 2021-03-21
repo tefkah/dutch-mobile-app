@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
-import { Button } from "@ui-kitten/components";
+import { StyleSheet, view } from 'react-native';
+import { Button, Text } from "@ui-kitten/components";
 import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
 import { createStackNavigator } from '@react-navigation/stack';
 import SelectLearningScreen from './SelectLearningScreen';
 import IPAScreen from './IPAScreen';

@@ -1,20 +1,20 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
-import { Text, Button } from '@ui-kitten/components';
+import { StyleSheet, View } from 'react-native';
+import { Text, Button, Layout } from '@ui-kitten/components';
 import EditScreenInfo from '../components/EditScreenInfo';
-import { View } from '../components/Themed';
 
 export default function TestScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Test</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+    <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View style={styles.container}>
+        <Text style={styles.title}> Test </Text>
+        <View style={styles.separator} />
 
-      <EditScreenInfo path="/screens/TestScreen.tsx" />
-      <Button
-        onPress={() => { navigation.navigate('OptionsScreen', { mode: 'spelling' }) }}
-      >op</Button>
-    </View>
+        <Button
+          onPress={() => { navigation.navigate('OptionsScreen', { mode: 'spelling' }) }}
+        >op</Button>
+      </View>
+    </Layout>
   );
 }
 

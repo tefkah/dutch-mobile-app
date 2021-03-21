@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Button, Text, Layout, Divider, Toggle } from '@ui-kitten/components';
+import { Text, Button, Layout, Divider, Toggle } from '@ui-kitten/components';
 //import Slider from "@ant-design/react-native/lib/slider";
 //import EditScreenInfo from '../components/EditScreenInfo';
 import SectionedMultiSelect from 'react-native-sectioned-multi-select';
@@ -136,9 +136,9 @@ export default function OptionsScreen({ route, navigation }) {
     };
 
     return (
-        <Layout style={{ flex: 1, justifyContent: 'center' }}>
-            <Text>Select your options</Text>
-            <View style={{ width: 200, flex: 1, height: 400 }}>
+        <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <View style={{ justifyContent: 'center', flex: 1, width: 400, alignItems: 'center' }}>
+                <Text category='h1' >Select your options</Text>
                 <SectionedMultiSelect
                     items={vowel}
                     IconRenderer={MaterialIcons}
@@ -151,58 +151,59 @@ export default function OptionsScreen({ route, navigation }) {
                     selectedItems={selectItems}
                     onSelectedItemsChange={onSelectedItemsChange}
                     onSelectedItemObjectsChange={onSelectedObjects}
+                    style={{ minWidth: 400 }}
                 />
-            </View>
-            <Text>Select how many questions you want</Text>
-            <SliderPicker
-                minlabel={'min'}
-                maxlabel={'max'}
-                midlabel={'lol'}
-                maxValue={20}
-                showNumberScale={true}
-                showSeparatorScale={true}
-                defaultValue={numberOfQuestions}
-                callback={position => { setNumber(position) }}
-                showFill={true}
-                fillColor={'green'}
-                showNumberScale={true}
-                showSeparatorScale={true}
-                buttonBackgroundColor={'#fff'}
-                buttonBorderColor={"#6c7682"}
-                buttonBorderWidth={1}
-                scaleNumberFontWeight={'300'}
-                buttonDimensionsPercentage={6}
-                heightPercentage={5}
-                widthPercentage={50}
-            />
-            <Text>{numberOfQuestions}</Text>
-            <Divider style={{ height: '5%' }} />
-            {mode === 'spelling' ?
-                <Toggle checked={hardMode} onChange={onCheckedChange}>
-                    {`Hardmode (type instead of multiple choice): ${hardMode}`}
-                </Toggle>
-                : null}
-            <Button onPress={() => {
-                const v = vowelList();
-                if (v.length < 2) {
-                } else {
-                    console.log(v);
-                    const w = makeVowelCombos(v);
-                    console.log(mode + "optionnav");
-                    navigation.navigate('Quiz',
-                        {
-                            vowels: w,
-                            numberOfQuestions: numberOfQuestions,
-                            hardMode: hardMode,
-                            mode: mode,
-                        });
+                <Text>Select how many questions you want</Text>
+                <SliderPicker
+                    minlabel={'min'}
+                    maxlabel={'max'}
+                    midlabel={'lol'}
+                    maxValue={20}
+                    showNumberScale={true}
+                    showSeparatorScale={true}
+                    defaultValue={numberOfQuestions}
+                    callback={position => { setNumber(position) }}
+                    showFill={true}
+                    fillColor={'green'}
+                    showNumberScale={true}
+                    showSeparatorScale={true}
+                    buttonBackgroundColor={'#fff'}
+                    buttonBorderColor={"#6c7682"}
+                    buttonBorderWidth={1}
+                    scaleNumberFontWeight={'300'}
+                    buttonDimensionsPercentage={6}
+                    heightPercentage={2}
+                    widthPercentage={80}
+                />
+                <Text>{numberOfQuestions}</Text>
+                <Divider style={{ height: '5%' }} />
+                {mode === 'spelling' ?
+                    <Toggle checked={hardMode} onChange={onCheckedChange}>
+                        {`Hardmode (type instead of multiple choice): ${hardMode}`}
+                    </Toggle>
+                    : null}
+                <Button onPress={() => {
+                    const v = vowelList();
+                    if (v.length < 2) {
+                    } else {
+                        console.log(v);
+                        const w = makeVowelCombos(v);
+                        console.log(mode + "optionnav");
+                        navigation.navigate('Quiz',
+                            {
+                                vowels: w,
+                                numberOfQuestions: numberOfQuestions,
+                                hardMode: hardMode,
+                                mode: mode,
+                            });
 
+                    }
                 }
-            }
-            }
-            >
-                Go
+                }
+                >
+                    Go
             </Button>
+            </View>
         </Layout>
     );
 }
