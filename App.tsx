@@ -1,3 +1,4 @@
+//import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -6,9 +7,9 @@ import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
 import * as eva from '@eva-design/eva';
-import {ApplicationProvider, Layout, Text, IconRegistry} from "@ui-kitten/components";
-import {default as theme} from './assets/kitten-colors.json';
-import { EvaIconsPack} from "@ui-kitten/eva-icons";
+import { ApplicationProvider, Layout, Text, IconRegistry } from "@ui-kitten/components";
+import { default as theme } from './assets/kitten-colors.json';
+import { EvaIconsPack } from "@ui-kitten/eva-icons";
 
 
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
     return (
       <>
         <IconRegistry icons={EvaIconsPack} />
-        <ApplicationProvider {... eva} theme={{... eva.light, ... theme}}>
+        <ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
           <SafeAreaProvider>
             <Navigation /*colorScheme={colorScheme}*/ />
             <StatusBar />

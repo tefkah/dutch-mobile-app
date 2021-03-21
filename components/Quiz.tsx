@@ -12,6 +12,7 @@ export interface Props {
   vowels: any[],
   navigation: any,
   hardMode: boolean,
+  mode: string,
 }
 
 interface State {
@@ -22,7 +23,9 @@ interface State {
   numberOfQuestions: number,
   vowel: any[],
   hardMode: boolean,
+  mode: string,
 };
+
 class Quiz extends Component<Props, State> {
   constructor(props: any) {
     super(props);
@@ -34,6 +37,7 @@ class Quiz extends Component<Props, State> {
       numberOfQuestions: props.numberOfQuestions,
       vowel: props.vowels,
       hardMode: props.hardMode,
+      //      mode: props.mode,
     };
   };
 
@@ -78,6 +82,7 @@ class Quiz extends Component<Props, State> {
 
   componentDidMount() {
     this.getQuestions();
+    console.log(this.props.mode + "quizmount");
   };
 
   render() {
@@ -92,6 +97,7 @@ class Quiz extends Component<Props, State> {
             key={this.state.questionBank[this.state.responses].questionId}
             selected={this.computeAnswer}
             hardMode={this.state.hardMode}
+            mode={this.props.mode}
           />
         }
 

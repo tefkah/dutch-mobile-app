@@ -26,7 +26,7 @@ export default function QuizScreen({ route, navigation }) {
 
     //const { gameOptions } = route.params
     const gameOptions: any = [5, "a, aa"];
-    const { numberOfQuestions, vowels, hardMode } = route.params;
+    const { numberOfQuestions, vowels, hardMode, mode } = route.params;
     return (
         //<QuestionBox options={optionFunc()} />
         <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -35,6 +35,7 @@ export default function QuizScreen({ route, navigation }) {
                 numberOfQuestions={numberOfQuestions}
                 navigation={navigation}
                 hardMode={hardMode}
+                mode={mode}
             />
         </Layout>
     );

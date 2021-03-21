@@ -9,18 +9,22 @@ import md5 from "md5";
 
 
 export default function QuestionBox(props: any) {
+  let title: string = (props.hardMode ? "What is being said here?" : "Is it " + props.options[0] + " or " + props.options[1] + "?");
   //const shuffledOptions: string[] = props.options.sort(() => Math.random() - 0.5);
   //let titleEasy: string = "Is it " + props.options[0] + " or " + props.options[1] + "?";
   //let titleHard:string = "What is being said here";
-  let title: string = (props.hardMode ? "What is being said here?" : "Is it " + props.options[0] + " or " + props.options[1] + "?");
   const [answered, setAnswered] = React.useState(0);
   const [correct, setCorrect] = React.useState();
   const [sound, setSound] = React.useState();
   const [inputText, setInputText] = React.useState("");
 
-  let filename: string = "Nl-" + props.antwoord + ".ogg";
-  let url: string = "https://upload.wikimedia.org/wikipedia/commons/" + md5(filename).substring(0, 1) + "/" + md5(filename).substring(0, 2) + "/" + filename;
-  const loc: string = '../assets/audiofiles/' + filename;
+  const generateURL = (option: string) => {
+    let filename: string = "Nl-" + option + ".ogg";
+    let url: string = "https://upload.wikimedia.org/wikipedia/commons/" + md5(filename).substring(0, 1) + "/" + md5(filename).substring(0, 2) + "/" + filename;
+    return (url);
+  }
+
+  //  const loc: string = '../assets/audiofiles/' + filename;
 
   async function buzz(input: string) {
     if (input === props.antwoord) {
@@ -62,9 +66,9 @@ export default function QuestionBox(props: any) {
 
   }
 
-  async function playSound() {
+  async function playSound(option: string) {
     const { sound } = await Audio.Sound.createAsync(
-      { uri: url },
+      { uri: generateURL(option) },
     );
     setSound(sound);
     console.log('playin sound');
@@ -97,7 +101,7 @@ export default function QuestionBox(props: any) {
 
   const Header: any = () => (
     <View {...props}>
-      <Text category='h6'>  {title} </Text>
+      <Text category='h6'>  {props.mode === 'spelling' ? title : "Which one is " + props.antwoord + "?"} </Text>
     </View>
   );
 
@@ -106,17 +110,68 @@ export default function QuestionBox(props: any) {
   );
   const subIcon = (props) => (
     <Icon {...props} name='corner-down-left' />
-  )
+  );
 
-  const hardModeViews = () => {
+  const modeSwitch = () => {
+    switch (props.mode) {
+      case 'spelling':
+        //return (<View><Text>spelling</Text></View>);
+        return (
+          <Card header={Header} style={{ height: 200, width: 350 }}>
+            <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center' }}>
+              <Button style={{ height: 60 }} onPress={() => { playSound(props.antwoord) }} appearance='ghost' accessoryLeft={SoundIcon} />
+              {spelling()}
+            </View>
+          </Card>
+        );
+
+      case 'pronunciation':
+        console.log('pronuncase: ' + props.mode);
+        return (
+          <Card header={Header} style={{ height: 200, width: 350 }}>
+            <View style={{ height: 100 }}>
+              {pronunciation()}
+            </View>
+          </Card>
+        );
+      default:
+        console.log("default case: " + props.mode);
+        console.log(props.mode);
+        return (<View><Text> Something went wronggg</Text></View>);
+    }
+  };
+
+  const pronunciation = () => {
+    return (
+      <>
+        <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
+          <Button style={{ height: 60 }} onPress={() => { playSound(props.options[0]) }} appearance='ghost' accessoryLeft={SoundIcon} />
+          <Button onPress={() => {
+            props.selected(+(props.options[0] === props.antwoord))
+            buzz(props.options[0])
+          }}>1</Button>
+        </View>
+        <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
+          <Button style={{ height: 60 }} onPress={() => { playSound(props.options[1]) }} appearance='ghost' accessoryLeft={SoundIcon} />
+          <Button onPress={() => {
+            props.selected(+(props.options[1] === props.antwoord))
+            buzz(props.options[1])
+          }}>2</Button>
+        </View>
+      </>
+    );
+  };
+
+  const spelling = () => {
     if (props.hardMode) {
+      console.log("hardmode spelling");
       return (
         <View style={{ flex: 1, flexDirection: 'row' }}>
           <Input
             placeholder='...'
             value={inputText}
             onChangeText={nextValue => setInputText(nextValue)}
-            style={{ width: 200 }}
+            style={{ width: 180 }}
           />
           <Button
             accessoryLeft={subIcon}
@@ -126,6 +181,7 @@ export default function QuestionBox(props: any) {
               buzz(inp)
               console.log(inp + "<- input answer -> " + props.antwoord);
             }}
+            style={{ marginRight: 'auto' }}
           />
         </View>
       );
@@ -161,12 +217,7 @@ export default function QuestionBox(props: any) {
 
   return (
     <Layout style={styles.topContainer} level='1' >
-      <Card header={Header} style={{ height: '200%', width: 350 }}>
-        <View style={{ height: '30%', flex: 1, flexDirection: 'row' }}>
-          <Button onPress={playSound} appearance='ghost' accessoryLeft={SoundIcon} />
-          {hardModeViews()}
-        </View>
-      </Card>
+      {modeSwitch()}
     </Layout>
   );
 };

@@ -3,23 +3,57 @@ import { StyleSheet } from 'react-native';
 import { Button } from "@ui-kitten/components";
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import { createStackNavigator } from '@react-navigation/stack';
+import SelectLearningScreen from './SelectLearningScreen';
+import IPAScreen from './IPAScreen';
+import VowelScreen from './VowelScreen';
+import ConsonantScreen from './ConsonantScreen';
+import IPAVowelScreen from './IPAVowelScreen';
+import IPAConsonantScreen from './IPAConsonantScreen';
+import IPAExplanationScreen from './IPAExplanationScreen';
+import LookupScreen from './LookupScreen';
 
 export default function LearnScreen() {
+    const Stack = createStackNavigator();
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Learn</Text>
-            <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-            <Button>
-                Learn IPA
-            </Button>
-            <Button>
-                Short v. Long vowels
-            </Button>
-            <Button>
-                Diphthongs
-            </Button>
-            <EditScreenInfo path="/screens/LearnScreen.tsx" />
-        </View>
+        <Stack.Navigator
+            initialRouteName="SelectLearningScreen"
+            screenOptions={{
+                headerShown: false,
+            }}>
+            <Stack.Screen
+                name="SelectLearningScreen"
+                component={SelectLearningScreen}
+            />
+            <Stack.Screen
+                name="IPAScreen"
+                component={IPAScreen}
+            />
+            <Stack.Screen
+                name="IPAConsonantScreen"
+                component={IPAConsonantScreen}
+            />
+            <Stack.Screen
+                name="IPAVowelScreen"
+                component={IPAVowelScreen}
+            />
+            <Stack.Screen
+                name="IPAExplanationScreen"
+                component={IPAExplanationScreen}
+            />
+            <Stack.Screen
+                name="VowelScreen"
+                component={VowelScreen}
+            />
+            <Stack.Screen
+                name="ConsonantScreen"
+                component={ConsonantScreen}
+            />
+            <Stack.Screen
+                name="LookupScreen"
+                component={LookupScreen}
+            />
+        </Stack.Navigator>
     );
 }
 

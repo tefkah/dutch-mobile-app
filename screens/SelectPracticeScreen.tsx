@@ -28,11 +28,14 @@ export default function SelectPracticeScreen({ navigation }) {
             <Text>Select the thing you want to practice, nerd</Text>
             <Divider />
             <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Button style={{ width: 200 }} appearance="outline" onPress={() => navigation.navigate('OptionsScreen', { mode: 'pronunciation' })}>Listening</Button>
+                <Button style={{ width: 200 }} appearance="outline"
+                    onPress={() => navigation.navigate('OptionsScreen', { mode: 'spelling' })}>Spelling</Button>
                 <Divider style={{ height: '1%' }} />
-                <Button style={{ width: 200 }} appearance="outline">Spelling</Button>
+                <Button style={{ width: 200 }} appearance="outline"
+                    onPress={() => navigation.navigate('OptionsScreen', { mode: 'pronunciation' })}>Pronunciation</Button>
                 <Divider style={{ height: '1%' }} />
-                <Button style={{ width: 200 }} appearance="outline">OooOoOOOo</Button>
+                <Button style={{ width: 200 }} appearance="outline"
+                    onPress={() => navigation.navigate('OptionsScreen', { mode: 'ipa' })}>IPA</Button>
             </Layout>
         </Layout>
     );

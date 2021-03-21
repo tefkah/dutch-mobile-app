@@ -15,7 +15,7 @@ export default function PracticeScreen() {
     <Stack.Navigator
       initialRouteName="SelectPracticeScreen"
       screenOptions={{
-        // headerShown: false,
+        headerShown: false,
       }}>
       <Stack.Screen
         name="SelectPracticeScreen"

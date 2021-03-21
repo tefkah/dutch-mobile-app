@@ -136,11 +136,10 @@ export default function OptionsScreen({ route, navigation }) {
     };
 
     return (
-        <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Layout style={{ flex: 1, justifyContent: 'center' }}>
             <Text>Select your options</Text>
-            <View>
+            <View style={{ width: 200, flex: 1, height: 400 }}>
                 <SectionedMultiSelect
-                    style={{ width: 400 }}
                     items={vowel}
                     IconRenderer={MaterialIcons}
                     uniqueKey="id"
@@ -164,11 +163,8 @@ export default function OptionsScreen({ route, navigation }) {
                 showSeparatorScale={true}
                 defaultValue={numberOfQuestions}
                 callback={position => { setNumber(position) }}
-                labelFontColor={"#6c7682"}
-                labelFontWeight={'600'}
                 showFill={true}
                 fillColor={'green'}
-                labelFontWeight={'bold'}
                 showNumberScale={true}
                 showSeparatorScale={true}
                 buttonBackgroundColor={'#fff'}
@@ -176,24 +172,31 @@ export default function OptionsScreen({ route, navigation }) {
                 buttonBorderWidth={1}
                 scaleNumberFontWeight={'300'}
                 buttonDimensionsPercentage={6}
-                heightPercentage={1}
-                widthPercentage={80}
+                heightPercentage={5}
+                widthPercentage={50}
             />
             <Text>{numberOfQuestions}</Text>
-            <Divider />
-            <Text>{mode}</Text>
-            <Toggle checked={hardMode} onChange={onCheckedChange}>
-                {`Hardmode (type instead of multiple choice): ${hardMode}`}
-            </Toggle>
+            <Divider style={{ height: '5%' }} />
+            {mode === 'spelling' ?
+                <Toggle checked={hardMode} onChange={onCheckedChange}>
+                    {`Hardmode (type instead of multiple choice): ${hardMode}`}
+                </Toggle>
+                : null}
             <Button onPress={() => {
                 const v = vowelList();
                 if (v.length < 2) {
                 } else {
                     console.log(v);
                     const w = makeVowelCombos(v);
-                    console.log(numberOfQuestions);
-                    console.log(hardMode + "in optionsscreen");
-                    navigation.navigate('Quiz', { vowels: w, numberOfQuestions: numberOfQuestions, hardMode: hardMode });
+                    console.log(mode + "optionnav");
+                    navigation.navigate('Quiz',
+                        {
+                            vowels: w,
+                            numberOfQuestions: numberOfQuestions,
+                            hardMode: hardMode,
+                            mode: mode,
+                        });
+
                 }
             }
             }

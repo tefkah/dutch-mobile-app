@@ -1,0 +1,72 @@
+[13:8:38.629] Global cache location '/home/thomas/.cache/typescript/4.0', safe file path '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typingSafeList.json', types map path /home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json
+[13:8:38.631] Processing cache location '/home/thomas/.cache/typescript/4.0'
+[13:8:38.631] Trying to find '/home/thomas/.cache/typescript/4.0/package.json'...
+[13:8:38.632] Loaded content of '/home/thomas/.cache/typescript/4.0/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.533"},"devDependencies":{"@types/md5":"^2.3.0"}}
+[13:8:38.632] Loaded content of '/home/thomas/.cache/typescript/4.0/package-lock.json'
+[13:8:38.651] Adding entry into typings cache: 'md5' => '/home/thomas/.cache/typescript/4.0/node_modules/@types/md5/index.d.ts'
+[13:8:38.652] Finished processing cache location '/home/thomas/.cache/typescript/4.0'
+[13:8:38.652] Process id: 9072
+[13:8:38.653] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[13:8:38.653] validateDefaultNpmLocation: false
+[13:8:38.653] Npm config file: /home/thomas/.cache/typescript/4.0/package.json
+[13:8:38.653] Updating types-registry npm package...
+[13:8:38.653] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[13:8:40.206]     Succeeded. stdout:
+    
+    up to date, audited 4 packages in 1s
+
+found 0 vulnerabilities
+
+[13:8:40.206] Updated types-registry npm package
+[13:57:57.969] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/screens","kind":"discover"}
+[13:57:58.134] Loaded safelist from types map file '/home/thomas/Projects/dutch-mobile-app/node_modules/typescript/lib/typesMap.json'
+[13:57:58.137] Explicitly included types: []
+[13:57:58.138] Inferred typings from unresolved imports: []
+[13:57:58.139] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[13:57:58.139] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[13:57:58.141] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/screens/bower_components
+[13:57:58.147] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/screens/node_modules
+[13:57:58.148] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[13:57:58.148] Response has been sent.
+[13:57:58.148] No new typings were requested as a result of typings discovery
+[13:58:10.633] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/screens","kind":"discover"}
+[13:58:10.634] Explicitly included types: []
+[13:58:10.634] Inferred typings from unresolved imports: []
+[13:58:10.635] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[13:58:10.635] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[13:58:10.635] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[13:58:10.636] Response has been sent.
+[13:58:10.636] No new typings were requested as a result of typings discovery
+[13:58:21.613] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/screens","kind":"discover"}
+[13:58:21.613] Explicitly included types: []
+[13:58:21.613] Inferred typings from unresolved imports: []
+[13:58:21.613] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[13:58:21.613] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[13:58:21.613] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[13:58:21.614] Response has been sent.
+[13:58:21.614] No new typings were requested as a result of typings discovery
+[16:11:12.205] Got install request {"projectName":"/dev/null/inferredProject2*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/screens","kind":"discover"}
+[16:11:12.208] Explicitly included types: []
+[16:11:12.211] Inferred typings from unresolved imports: []
+[16:11:12.211] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[16:11:12.212] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/screens/bower_components","/home/thomas/Projects/dutch-mobile-app/screens/node_modules"]}
+[16:11:12.213] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/screens/bower_components
+[16:11:12.213] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/screens/node_modules
+[16:11:12.213] Sending response:
+    {"projectName":"/dev/null/inferredProject2*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[16:11:12.214] Response has been sent.
+[16:11:12.214] No new typings were requested as a result of typings discovery
+[18:12:14.165] Got install request {"projectName":"/dev/null/inferredProject3*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/thomas/Projects/dutch-mobile-app/components","kind":"discover"}
+[18:12:14.189] Explicitly included types: []
+[18:12:14.190] Inferred typings from unresolved imports: []
+[18:12:14.190] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/components/bower_components","/home/thomas/Projects/dutch-mobile-app/components/node_modules"]}
+[18:12:14.190] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/thomas/Projects/dutch-mobile-app/components/bower_components","/home/thomas/Projects/dutch-mobile-app/components/node_modules"]}
+[18:12:14.191] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/components/bower_components
+[18:12:14.193] DirectoryWatcher:: Added:: WatchInfo: /home/thomas/Projects/dutch-mobile-app/components/node_modules
+[18:12:14.194] Sending response:
+    {"projectName":"/dev/null/inferredProject3*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[18:12:14.194] Response has been sent.
+[18:12:14.194] No new typings were requested as a result of typings discovery
