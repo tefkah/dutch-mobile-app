@@ -1,4 +1,3 @@
-
 import { Layout, Button, Text } from '@ui-kitten/components';
 import React, { useState } from 'react';
 import { TouchableOpacity, View, Alert, StyleSheet } from 'react-native';
@@ -92,7 +91,7 @@ export default function IPAConsonantScreen() {
     return (
         <Layout style={{ flex: 1, justifyContent: 'center' }}>
             <View style={styles.container}>
-                <Table style={{ flexDirection: 'row' }} borderStyle={{ borderWidth: 1 }}>
+                <Table style={{ flexDirection: 'row' }} borderStyle={{ borderWidth: 1 }}  >
                     {/* Left Wrapper */}
                     <TableWrapper style={{ width: 80 }}>
                         <Cell data="" style={styles.singleHead} />

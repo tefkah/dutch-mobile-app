@@ -9807,3 +9807,276 @@ Info 8064 [21:51:4.774] Format host information updated
 Info 8065 [21:51:5.25] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
 Info 8066 [21:51:5.74] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1388 structureChanged: false Elapsed: 49ms
 Info 8067 [21:51:5.74] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8068 [21:54:29.721] Search path: /home/thomas/Projects/dutch-mobile-app/screens
+Info 8069 [21:54:29.721] For info: /home/thomas/Projects/dutch-mobile-app/screens/PracticeScreen.tsx :: Config file name: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8070 [21:54:46.105] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8071 [21:54:46.202] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1389 structureChanged: false Elapsed: 97ms
+Info 8072 [21:54:46.202] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8073 [21:54:46.790] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8074 [21:54:46.838] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1390 structureChanged: false Elapsed: 48ms
+Info 8075 [21:54:46.838] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8076 [21:54:47.792] Format host information updated
+Info 8077 [21:54:56.997] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8078 [21:54:57.17] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1391 structureChanged: false Elapsed: 20ms
+Info 8079 [21:54:57.17] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8080 [21:54:57.251] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8081 [21:54:57.290] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1392 structureChanged: false Elapsed: 39ms
+Info 8082 [21:54:57.290] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8083 [21:54:58.68] Format host information updated
+Info 8084 [21:55:9.732] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8085 [21:55:9.862] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1393 structureChanged: false Elapsed: 130ms
+Info 8086 [21:55:9.862] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8087 [21:55:10.97] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8088 [21:55:10.124] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1394 structureChanged: false Elapsed: 27ms
+Info 8089 [21:55:10.124] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8090 [21:55:11.82] Format host information updated
+Info 8091 [21:55:58.828] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8092 [21:55:58.947] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1395 structureChanged: false Elapsed: 119ms
+Info 8093 [21:55:58.947] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8094 [21:56:1.201] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8095 [21:56:1.222] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1396 structureChanged: false Elapsed: 21ms
+Info 8096 [21:56:1.222] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8097 [21:56:1.383] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8098 [21:56:1.417] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1397 structureChanged: false Elapsed: 34ms
+Info 8099 [21:56:1.417] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8100 [21:56:1.715] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8101 [21:56:1.759] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1398 structureChanged: false Elapsed: 44ms
+Info 8102 [21:56:1.759] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8103 [21:56:2.53] getCompletionData: Get current token: 0
+Info 8104 [21:56:2.53] getCompletionData: Is inside comment: 0
+Info 8105 [21:56:2.53] getCompletionData: Get previous token 1: 0
+Info 8106 [21:56:2.53] getCompletionData: Get previous token 2: 0
+Info 8107 [21:56:2.53] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8108 [21:56:2.101] getCompletionData: Semantic work: 48
+Info 8109 [21:56:2.101] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 8110 [21:56:5.593] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8111 [21:56:5.622] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1399 structureChanged: false Elapsed: 29ms
+Info 8112 [21:56:5.622] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8113 [21:56:6.131] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8114 [21:56:6.171] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1400 structureChanged: false Elapsed: 40ms
+Info 8115 [21:56:6.171] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8116 [21:56:6.503] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8117 [21:56:6.521] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1401 structureChanged: false Elapsed: 17ms
+Info 8118 [21:56:6.521] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8119 [21:56:6.828] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8120 [21:56:6.857] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1402 structureChanged: false Elapsed: 29ms
+Info 8121 [21:56:6.857] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8122 [21:56:7.226] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8123 [21:56:7.271] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1403 structureChanged: false Elapsed: 45ms
+Info 8124 [21:56:7.271] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8125 [21:56:7.530] getCompletionData: Get current token: 0
+Info 8126 [21:56:7.530] getCompletionData: Is inside comment: 0
+Info 8127 [21:56:7.531] getCompletionData: Get previous token 1: 0
+Info 8128 [21:56:7.531] getCompletionData: Get previous token 2: 0
+Info 8129 [21:56:7.531] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8130 [21:56:7.554] getCompletionData: Semantic work: 23
+Info 8131 [21:56:7.555] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 8132 [21:56:8.941] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8133 [21:56:8.964] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1404 structureChanged: false Elapsed: 23ms
+Info 8134 [21:56:8.964] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8135 [21:56:9.305] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8136 [21:56:9.326] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1405 structureChanged: false Elapsed: 21ms
+Info 8137 [21:56:9.326] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8138 [21:56:9.654] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8139 [21:56:9.758] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1406 structureChanged: false Elapsed: 104ms
+Info 8140 [21:56:9.758] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8141 [21:56:9.759] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8142 [21:56:9.777] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1407 structureChanged: false Elapsed: 18ms
+Info 8143 [21:56:9.777] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8144 [21:56:10.575] getCompletionData: Get current token: 0
+Info 8145 [21:56:10.575] getCompletionData: Is inside comment: 0
+Info 8146 [21:56:10.576] getCompletionData: Get previous token 1: 1
+Info 8147 [21:56:10.576] getCompletionData: Get previous token 2: 0
+Info 8148 [21:56:10.576] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8149 [21:56:10.690] getCompletionData: Semantic work: 114
+Info 8150 [21:56:10.690] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 8151 [21:56:11.545] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8152 [21:56:11.576] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1408 structureChanged: false Elapsed: 31ms
+Info 8153 [21:56:11.576] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8154 [21:56:11.577] getCompletionData: Get current token: 0
+Info 8155 [21:56:11.577] getCompletionData: Is inside comment: 0
+Info 8156 [21:56:11.577] getCompletionData: Get previous token 1: 0
+Info 8157 [21:56:11.577] getCompletionData: Get previous token 2: 0
+Info 8158 [21:56:11.578] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8159 [21:56:11.621] getCompletionData: Semantic work: 43
+Info 8160 [21:56:12.859] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8161 [21:56:12.924] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1409 structureChanged: false Elapsed: 65ms
+Info 8162 [21:56:12.924] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8163 [21:56:13.973] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8164 [21:56:14.43] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1410 structureChanged: false Elapsed: 70ms
+Info 8165 [21:56:14.43] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8166 [21:56:16.696] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8167 [21:56:16.759] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1411 structureChanged: false Elapsed: 63ms
+Info 8168 [21:56:16.759] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8169 [21:56:17.639] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8170 [21:56:17.666] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1412 structureChanged: false Elapsed: 27ms
+Info 8171 [21:56:17.666] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8172 [21:56:18.35] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8173 [21:56:18.73] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1413 structureChanged: false Elapsed: 36ms
+Info 8174 [21:56:18.73] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8175 [21:56:18.359] getCompletionData: Get current token: 0
+Info 8176 [21:56:18.359] getCompletionData: Is inside comment: 0
+Info 8177 [21:56:18.359] getCompletionData: Get previous token 1: 0
+Info 8178 [21:56:18.359] getCompletionData: Get previous token 2: 0
+Info 8179 [21:56:18.359] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8180 [21:56:18.409] getCompletionData: Semantic work: 50
+Info 8181 [21:56:18.410] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 8182 [21:56:20.312] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8183 [21:56:20.356] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1414 structureChanged: false Elapsed: 44ms
+Info 8184 [21:56:20.356] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8185 [21:56:20.554] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8186 [21:56:20.574] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1415 structureChanged: false Elapsed: 20ms
+Info 8187 [21:56:20.574] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8188 [21:56:21.496] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8189 [21:56:21.532] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1416 structureChanged: false Elapsed: 36ms
+Info 8190 [21:56:21.532] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8191 [21:56:21.533] getCompletionData: Get current token: 1
+Info 8192 [21:56:21.533] getCompletionData: Is inside comment: 0
+Info 8193 [21:56:21.533] getCompletionData: Get previous token 1: 0
+Info 8194 [21:56:21.533] getCompletionData: Get previous token 2: 0
+Info 8195 [21:56:21.533] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8196 [21:56:21.590] getCompletionData: Semantic work: 57
+Info 8197 [21:56:24.535] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8198 [21:56:24.573] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1417 structureChanged: false Elapsed: 38ms
+Info 8199 [21:56:24.573] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8200 [21:56:26.756] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8201 [21:56:26.798] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1418 structureChanged: false Elapsed: 42ms
+Info 8202 [21:56:26.798] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8203 [21:56:27.79] getCompletionData: Get current token: 0
+Info 8204 [21:56:27.79] getCompletionData: Is inside comment: 0
+Info 8205 [21:56:27.79] getCompletionData: Get previous token 1: 0
+Info 8206 [21:56:27.79] getCompletionData: Get previous token 2: 0
+Info 8207 [21:56:27.79] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8208 [21:56:27.89] getSymbolsFromOtherSourceFileExports: Recomputing list
+Info 8209 [21:56:27.158] forEachExternalModuleToImportFrom: filtered out 117 modules by package.json contents
+Info 8210 [21:56:27.190] forEachExternalModuleToImportFrom: filtered out 15 modules by package.json contents
+Info 8211 [21:56:27.190] forEachExternalModuleToImportFrom autoImportProvider: 32
+Info 8212 [21:56:27.191] getSymbolsFromOtherSourceFileExports: 102
+Info 8213 [21:56:27.207] getCompletionData: Semantic work: 128
+Info 8214 [21:56:27.270] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 19
+Info 8215 [21:56:27.297] getCompletionData: Get current token: 0
+Info 8216 [21:56:27.297] getCompletionData: Is inside comment: 0
+Info 8217 [21:56:27.297] getCompletionData: Get previous token 1: 0
+Info 8218 [21:56:27.297] getCompletionData: Get previous token 2: 0
+Info 8219 [21:56:27.297] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8220 [21:56:27.315] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 8221 [21:56:27.324] getCompletionData: Semantic work: 27
+Info 8222 [21:56:27.349] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 25
+Info 8223 [21:56:27.372] getCompletionData: Get current token: 0
+Info 8224 [21:56:27.372] getCompletionData: Is inside comment: 0
+Info 8225 [21:56:27.372] getCompletionData: Get previous token 1: 0
+Info 8226 [21:56:27.372] getCompletionData: Get previous token 2: 0
+Info 8227 [21:56:27.372] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8228 [21:56:27.377] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 8229 [21:56:27.382] getCompletionData: Semantic work: 10
+Info 8230 [21:56:27.401] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 18
+Info 8231 [21:56:28.132] Format host information updated
+Info 8232 [21:56:28.386] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8233 [21:56:28.416] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1419 structureChanged: false Elapsed: 30ms
+Info 8234 [21:56:28.416] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8235 [21:57:31.36] Search path: /home/thomas/Projects/dutch-mobile-app/screens
+Info 8236 [21:57:31.36] For info: /home/thomas/Projects/dutch-mobile-app/screens/IPAConsonantScreen.tsx :: Config file name: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8237 [21:58:25.589] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8238 [21:58:25.661] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1420 structureChanged: false Elapsed: 72ms
+Info 8239 [21:58:25.661] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8240 [21:59:3.182] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8241 [21:59:3.237] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1421 structureChanged: false Elapsed: 55ms
+Info 8242 [21:59:3.238] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8243 [21:59:4.788] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8244 [21:59:4.866] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1422 structureChanged: false Elapsed: 54ms
+Info 8245 [21:59:4.866] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8246 [21:59:5.16] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8247 [21:59:5.52] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1423 structureChanged: false Elapsed: 35ms
+Info 8248 [21:59:5.52] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8249 [21:59:5.312] getCompletionData: Get current token: 0
+Info 8250 [21:59:5.313] getCompletionData: Is inside comment: 0
+Info 8251 [21:59:5.313] getCompletionData: Get previous token 1: 0
+Info 8252 [21:59:5.314] getCompletionData: Get previous token 2: 1
+Info 8253 [21:59:5.314] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8254 [21:59:5.339] getCompletionData: Semantic work: 25
+Info 8255 [21:59:5.340] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 8256 [21:59:7.2] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8257 [21:59:7.135] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1424 structureChanged: false Elapsed: 132ms
+Info 8258 [21:59:7.135] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8259 [21:59:7.136] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8260 [21:59:7.170] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1425 structureChanged: false Elapsed: 34ms
+Info 8261 [21:59:7.171] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8262 [21:59:7.455] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8263 [21:59:7.484] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1426 structureChanged: false Elapsed: 29ms
+Info 8264 [21:59:7.484] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8265 [21:59:9.311] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8266 [21:59:9.351] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1427 structureChanged: false Elapsed: 40ms
+Info 8267 [21:59:9.351] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8268 [21:59:15.486] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8269 [21:59:15.557] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1428 structureChanged: false Elapsed: 71ms
+Info 8270 [21:59:15.557] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8271 [21:59:15.558] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8272 [21:59:15.580] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1429 structureChanged: false Elapsed: 21ms
+Info 8273 [21:59:15.580] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8274 [21:59:15.920] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8275 [21:59:15.994] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1430 structureChanged: false Elapsed: 74ms
+Info 8276 [21:59:15.994] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8277 [21:59:16.245] getCompletionData: Get current token: 0
+Info 8278 [21:59:16.245] getCompletionData: Is inside comment: 0
+Info 8279 [21:59:16.245] getCompletionData: Get previous token 1: 0
+Info 8280 [21:59:16.245] getCompletionData: Get previous token 2: 0
+Info 8281 [21:59:16.245] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8282 [21:59:16.261] getCompletionData: Semantic work: 16
+Info 8283 [21:59:16.261] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 8284 [21:59:17.379] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8285 [21:59:17.405] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1431 structureChanged: false Elapsed: 26ms
+Info 8286 [21:59:17.405] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8287 [21:59:18.571] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8288 [21:59:18.603] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1432 structureChanged: false Elapsed: 32ms
+Info 8289 [21:59:18.603] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8290 [21:59:18.806] getCompletionData: Get current token: 0
+Info 8291 [21:59:18.806] getCompletionData: Is inside comment: 0
+Info 8292 [21:59:18.806] getCompletionData: Get previous token 1: 0
+Info 8293 [21:59:18.806] getCompletionData: Get previous token 2: 0
+Info 8294 [21:59:18.806] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 8295 [21:59:18.830] getCompletionData: Semantic work: 24
+Info 8296 [21:59:18.831] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 8297 [21:59:19.576] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8298 [21:59:19.599] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1433 structureChanged: false Elapsed: 21ms
+Info 8299 [21:59:19.599] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8300 [21:59:19.955] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8301 [21:59:20.53] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1434 structureChanged: false Elapsed: 98ms
+Info 8302 [21:59:20.53] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 8303 [21:59:32.463] Format host information updated
+Info 8304 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.3758415996 0:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8305 [23:55:45.578] Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Detected file add/remove of non supported extension: /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.3758415996
+Info 8306 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.3758415996 0:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8307 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.3758415996 1:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8308 [23:55:45.578] Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Detected file add/remove of non supported extension: /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.3758415996
+Info 8309 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.3758415996 1:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8310 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json 2:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8311 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json 2:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8312 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.2756815044 3:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8313 [23:55:45.578] Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Detected file add/remove of non supported extension: /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.2756815044
+Info 8314 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.2756815044 3:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8315 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.2756815044 4:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8316 [23:55:45.578] Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Detected file add/remove of non supported extension: /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.2756815044
+Info 8317 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json.2756815044 4:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8318 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json 5:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8319 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/settings.json 5:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8320 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1256964593 6:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8321 [23:55:45.578] Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Detected file add/remove of non supported extension: /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1256964593
+Info 8322 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1256964593 6:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8323 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1256964593 7:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8324 [23:55:45.578] Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Detected file add/remove of non supported extension: /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1256964593
+Info 8325 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1256964593 7:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8326 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json 8:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8327 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json 8:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8328 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1407974377 9:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8329 [23:55:45.578] Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Detected file add/remove of non supported extension: /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1407974377
+Info 8330 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1407974377 9:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8331 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1407974377 10:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8332 [23:55:45.578] Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Detected file add/remove of non supported extension: /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1407974377
+Info 8333 [23:55:45.578] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json.1407974377 10:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8334 [23:55:45.578] DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json 11:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8335 [23:55:45.579] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/thomas/Projects/dutch-mobile-app/.expo/packager-info.json 11:: WatchInfo: /home/thomas/Projects/dutch-mobile-app 1 undefined Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json WatchType: Wild card directory
+Info 8336 [23:55:45.852] Starting updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json
+Info 8337 [23:55:45.858] Finishing updateGraphWorker: Project: /home/thomas/Projects/dutch-mobile-app/tsconfig.json Version: 1435 structureChanged: false Elapsed: 6ms
+Info 8338 [23:55:48.79] Before ensureProjectForOpenFiles:
+Info 8339 [23:55:48.80] After ensureProjectForOpenFiles:
+Info 8340 [23:55:48.80] got projects updated in background, updating diagnostics for /home/thomas/Projects/dutch-mobile-app/screens/OptionsScreen.tsx,/home/thomas/Projects/dutch-mobile-app/components/DrawerContent.tsx,/home/thomas/Projects/dutch-mobile-app/components/Themed.tsx,/home/thomas/Projects/dutch-mobile-app/components/StyledText.tsx,/home/thomas/Projects/dutch-mobile-app/navigation/BottomTabNavigator.tsx,/home/thomas/Projects/dutch-mobile-app/navigation/index.tsx,/home/thomas/Projects/dutch-mobile-app/components/theme-context.js,/home/thomas/Projects/dutch-mobile-app/App.tsx,/home/thomas/Projects/dutch-mobile-app/components/theme-context.tsx,/home/thomas/Projects/dutch-mobile-app/screens/TestScreen.tsx,/home/thomas/Projects/dutch-mobile-app/screens/LearnScreen.tsx,/home/thomas/Projects/dutch-mobile-app/screens/SelectLearningScreen.tsx,/home/thomas/Projects/dutch-mobile-app/screens/SelectPracticeScreen.tsx,/home/thomas/Projects/dutch-mobile-app/assets/custom-theme.ts,/home/thomas/Projects/dutch-mobile-app/constants/Colors.ts,/home/thomas/Projects/dutch-mobile-app/screens/SettingsScreen.tsx,/home/thomas/Projects/dutch-mobile-app/screens/MainScreen.tsx,/home/thomas/Projects/dutch-mobile-app/screens/PracticeScreen.tsx,/home/thomas/Projects/dutch-mobile-app/screens/IPAConsonantScreen.tsx

@@ -87,7 +87,7 @@ function TabBarIcon(props: { name: string; color: string }) {
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
-const PracticeStack = createStackNavigator<PracticeParamList>();
+const PracticeStack = createStackNavigator();
 
 function PracticeNavigator() {
   return (
@@ -117,7 +117,7 @@ function PracticeNavigator() {
   );
 }
 
-const TestStack = createStackNavigator<TestParamList>();
+const TestStack = createStackNavigator();
 
 function TestNavigator() {
   return (
@@ -138,7 +138,7 @@ function TestNavigator() {
   );
 }
 
-const LearnStack = createStackNavigator<LearnParamList>();
+const LearnStack = createStackNavigator();
 
 function LearnNavigator() {
   return (

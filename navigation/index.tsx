@@ -34,6 +34,7 @@ function RootNavigator() {
       drawerType={'permanent'}
       drawerStyle={{ width: '100%' }}
       drawerContent={(props) => <DrawerContent {...props} />}
+      screenOptions={{ headerShown: false }}
     >
       <Drawer.Screen name="Root" component={BottomTabNavigator} />
       <Drawer.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
