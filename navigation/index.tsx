@@ -35,14 +35,14 @@ const Drawer = createDrawerNavigator();
 
 
 const DrawerScreen = () => (
-  /*
-<Drawer.Navigator
-  initialRouteName="Root"
-  drawerContent={(props) => <DrawerContent {...props} />}
-  screenOptions={{ headerShown: false }}
-*/
-  <Drawer.Navigator initialRouteName="Root">
-    <Drawer.Screen name="Root" component={testScreen} />
+  <Drawer.Navigator
+    initialRouteName="Root"
+    drawerContent={(props) => <DrawerContent {...props} />}
+    screenOptions={{ headerShown: false }}
+  >
+    <Drawer.Screen name="Root" component={BottomTabNavigator} />
+    <Drawer.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+    <Drawer.Screen name="SettingsScreen" component={SettingsScreen} options={{ title: 'Settings' }} />
   </Drawer.Navigator>
 
 );

@@ -28,36 +28,31 @@ const Nav = () => (
 );
 
 export default function App() {
-  //const isLoadingComplete = useCachedResources();
-  //const colorScheme = useColorScheme();
+  const isLoadingComplete = useCachedResources();
+  const colorScheme = useColorScheme();
 
-  //const [theme, setTheme] = React.useState('light');
+  const [theme, setTheme] = React.useState('light');
 
-  //const toggleTheme = () => {
-  // const nextTheme = theme === 'light' ? 'dark' : 'light';
-  // setTheme(nextTheme);
-  // };
+  const toggleTheme = () => {
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(nextTheme);
+  };
 
-  //if (!isLoadingComplete) {
-  //  return null;
-  //} else {
-  return (
-    <NavigationContainer>
-      <Nav />
-    </NavigationContainer>
-  );
+  if (!isLoadingComplete) {
+    return null;
+  } else {
+    return (
+      <>
+        <IconRegistry icons={EvaIconsPack} />
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+          <ApplicationProvider {...eva} theme={{ ...eva[theme], ...customTheme }}>
+            <SafeAreaProvider>
+              <Navigation />
+              <StatusBar />
+            </SafeAreaProvider>
+          </ApplicationProvider>
+        </ThemeContext.Provider>
+      </>
+    );
+  }
 }
-    /*
-<>
-<IconRegistry icons={EvaIconsPack} />
-<ThemeContext.Provider value={{ theme, toggleTheme }}>
-<ApplicationProvider {...eva} theme={{ ...eva[theme], ...customTheme }}>
-<SafeAreaProvider>
-<Navigation />
-<StatusBar />
-</SafeAreaProvider>
-</ApplicationProvider>
-</ThemeContext.Provider>
-</>
-*/
-//}
