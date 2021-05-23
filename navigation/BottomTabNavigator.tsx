@@ -92,11 +92,7 @@ const PracticeStack = createStackNavigator();
 function PracticeNavigator() {
   return (
     <PracticeStack.Navigator
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: '#222222',
-        },
-      }}>
+    >
       <PracticeStack.Screen
         name="SelectPracticeScreen"
         component={SelectPracticeScreen}

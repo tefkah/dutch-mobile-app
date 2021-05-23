@@ -18,7 +18,8 @@ export default function CustomDrawerContent({ navigation }) {
                         // Navigate using the `navigation` prop that you received
                         navigation.navigate('SettingsScreen');
                     }}
-                >Woop</Button>
+                >Button
+                </Button>
                 <Text>Yooooooooooooooooooooo</Text>
                 <Toggle checked={themeContext.theme === 'dark'} onChange={themeContext.toggleTheme}>
                     {'DarkMode'}
