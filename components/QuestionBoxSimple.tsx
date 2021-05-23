@@ -5,10 +5,11 @@ import { Audio } from "expo-av";
 import yes from "../assets/correct.mp3";
 import no from "../assets/wrong.mp3";
 import md5 from "md5";
-
-
+import * as FileSystem from "expo-file-system";
+import { Asset } from 'expo-asset';
 
 export default function QuestionBox(props: any) {
+  //console.log(pain);
   let title: string = (props.hardMode ? "What is being said here?" : "Is it " + props.options[0] + " or " + props.options[1] + "?");
   //const shuffledOptions: string[] = props.options.sort(() => Math.random() - 0.5);
   //let titleEasy: string = "Is it " + props.options[0] + " or " + props.options[1] + "?";
@@ -18,11 +19,18 @@ export default function QuestionBox(props: any) {
   const [sound, setSound] = React.useState();
   const [inputText, setInputText] = React.useState("");
 
-  const generateURL = (option: string) => {
-    let filename: string = "Nl-" + option + ".ogg";
+  const STAAL = require("../assets/audiofiles/Nl-staal.mp3");
+
+  console.log(STAAL);
+  const audioDir = FileSystem.documentDirectory;
+  const generateurl = (option: string) => {
+    let filename: string = "nl-" + option + ".ogg";
     let url: string = "https://upload.wikimedia.org/wikipedia/commons/" + md5(filename).substring(0, 1) + "/" + md5(filename).substring(0, 2) + "/" + filename;
     return (url);
   }
+
+
+
 
   //  const loc: string = '../assets/audiofiles/' + filename;
 
@@ -67,8 +75,12 @@ export default function QuestionBox(props: any) {
   }
 
   async function playSound(option: string) {
+    //const { sound } = await Audio.Sound.createAsync(
+    //  { uri: audioDir + "Nl-" + option + ".ogg" },
+    // {uri: generateURL(option)}
+    //);
     const { sound } = await Audio.Sound.createAsync(
-      { uri: generateURL(option) },
+      { uri: FileSystem.cacheDirectory + "audio/" + "Nl-" + option + ".ogg" }
     );
     setSound(sound);
     console.log('playin sound');

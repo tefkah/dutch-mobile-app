@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "dutch-react-native",
-    "slug": "dutch-react-native",
+    "name": "dutch-vowel-app",
+    "slug": "dutch-vowel-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,7 +16,7 @@
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
-      "**/*"
+      "./assets/*"
     ],
     "ios": {
       "supportsTablet": true
