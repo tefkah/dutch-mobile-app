@@ -15,3 +15,8 @@ Check out an earlier [[https://github.com/ThomasJorna/dutch-language-course][web
 * Where to download
 
 The app is not in a useable state yet, but will be released on Android and hopefully on iOS when finished.
+Ideally I will also get a web version running but no promises ;)
+
+* License
+
+This project is licensed under the GPLv3.
