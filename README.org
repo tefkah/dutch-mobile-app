@@ -1,0 +1,17 @@
+#+title: dutch-mobile-app (name WIP)
+
+
+React Native App for training Dutch vowel sounds (and possibly more)
+
+* What is it
+
+According to research^{TM} adults are pretty good at learning new words, but pretty shite at learning new vowel sounds. One way to train the latter is by actively
+practicing to distinguish the sounds in words. That is what this app tries to do, plus some more.
+
+This is my first React Native project so it will be somewhat messy, but hopefully it will be functional at the end.
+
+Check out an earlier [[web-version here][https://github.com/ThomasJorna/dutch-language-course]].
+
+* Where to download
+
+The app is not in a useable state yet, but will be released on Android and hopefully on iOS when finished.
