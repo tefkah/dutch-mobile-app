@@ -10,7 +10,7 @@ practicing to distinguish the sounds in words. That is what this app tries to do
 
 This is my first React Native project so it will be somewhat messy, but hopefully it will be functional at the end.
 
-Check out an earlier [[web-version here][https://github.com/ThomasJorna/dutch-language-course]].
+Check out an earlier [[https://github.com/ThomasJorna/dutch-language-course][web-version here]].
 
 * Where to download
 
